@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="@string/pref_celsius_farhneit"
+        android:summaryOn="Celsius"
+        android:summaryOff="Fahrenheit"
+        android:title="Change Metric"/>
+
+    <ListPreference
+        android:key="gmt-preferences"
+        android:title="Select GMT"/>
+
+
+</PreferenceScreen>

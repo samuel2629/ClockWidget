@@ -1,5 +1,6 @@
 package com.silho.ideo.clockwidget.widget;
 
+import android.annotation.SuppressLint;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.appwidget.AppWidgetManager;
@@ -9,15 +10,29 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.widget.RemoteViews;
+import android.widget.Toast;
 
 import com.silho.ideo.clockwidget.ui.MainActivity;
 import com.silho.ideo.clockwidget.R;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.List;
+import java.util.Locale;
+
+import static com.silho.ideo.clockwidget.widget.ClockAppWidget.ClockUpdateService.mPlace;
 
 /**
  * Implementation of App Widget functionality.
@@ -27,6 +42,48 @@ public class ClockAppWidget extends AppWidgetProvider {
     public static final String PACKAGE_NAME = "com.silho.ideo.clockwidget";
 
     public static class ClockUpdateService extends Service {
+
+
+        private static final long LOCATION_REFRESH_TIME = 30;
+        private float LOCATION_REFRESH_DISTANCE = 1;
+
+        private LocationManager mLocationManager;
+        private Geocoder mGeocoder;
+
+        private List<Address> mAddresses;
+        public static String mPlace;
+
+        private LocationListener mLocationListener = new LocationListener() {
+            @Override
+            public void onLocationChanged(Location location) {
+                location.getLongitude();
+                location.getLatitude();
+                location.describeContents();
+                try {
+                    mAddresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+                    mPlace = mAddresses.get(0).getLocality();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onStatusChanged(String s, int i, Bundle bundle) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String s) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String s) {
+
+            }
+        };
+
 
         public ClockUpdateService(){}
 
@@ -46,9 +103,28 @@ public class ClockAppWidget extends AppWidgetProvider {
             }
         };
 
+        @SuppressLint("MissingPermission")
         @Override
         public void onCreate() {
             super.onCreate();
+
+            mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+            mGeocoder = new Geocoder(this, Locale.getDefault());
+
+            if(isNetworkAvailable()) {
+                mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+                        LOCATION_REFRESH_TIME, LOCATION_REFRESH_DISTANCE, mLocationListener);
+
+                Location location = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                try {
+                    mAddresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 5);
+                    mPlace = mAddresses.get(0).getLocality();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                Toast.makeText(this, R.string.network_error, Toast.LENGTH_SHORT).show();
+            }
             mIntentFilter = new IntentFilter();
             mIntentFilter.addAction(Intent.ACTION_TIME_TICK);
             mIntentFilter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
@@ -72,6 +148,17 @@ public class ClockAppWidget extends AppWidgetProvider {
             }
             return super.onStartCommand(intent, flags, startId);
         }
+
+        protected boolean isNetworkAvailable() {
+            ConnectivityManager manager = (ConnectivityManager)
+                    getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo networkInfo = manager.getActiveNetworkInfo();
+            boolean isAvailable = false;
+            if (networkInfo != null && networkInfo.isConnected()) {
+                isAvailable = true;
+            }
+            return isAvailable;
+        }
     }
 
     private static RemoteViews updateViews(Context context, AppWidgetManager appWidgetManager, int appWidgetId){
@@ -81,11 +168,10 @@ public class ClockAppWidget extends AppWidgetProvider {
         SimpleDateFormat formatterDate = new SimpleDateFormat("EEEE dd MMMM ");
         String time = formatterTime.format(timeInMillis);
         String date = formatterDate.format(timeInMillis);
-        String place = "Aix-en-provence-les-milles-sur-seine-des-bouches-du-rhone";
 
         remoteViews.setTextViewText(R.id.appwidgetTimeTv, time);
         remoteViews.setTextViewText(R.id.appwidgetDateTv, date);
-        remoteViews.setTextViewText(R.id.appwidgetPlaceTv, place);
+        remoteViews.setTextViewText(R.id.appwidgetPlaceTv, mPlace);
 
         onClickWidget(context, remoteViews, appWidgetId, appWidgetManager);
 
@@ -110,34 +196,6 @@ public class ClockAppWidget extends AppWidgetProvider {
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
         appWidgetManager.updateAppWidget(clockWidget, remoteViews);
     }
-
-//    @Override
-//    public void onAppWidgetOptionsChanged(Context context, AppWidgetManager appWidgetManager, int appWidgetId, Bundle newOptions) {
-//        Bundle options = appWidgetManager.getAppWidgetOptions(appWidgetId);
-//        int minWidth = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH);
-//        int minHeight = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT);
-//        appWidgetManager.updateAppWidget(appWidgetId, getRemoteViews(context, minWidth, minHeight));
-//
-//        super.onAppWidgetOptionsChanged(context, appWidgetManager, appWidgetId, newOptions);
-//    }
-//
-//    private RemoteViews getRemoteViews(Context context, int minWidth, int minHeight) {
-//
-//        int rows = getCellsForSize(minHeight);
-//        int columns = getCellsForSize(minWidth);
-//
-//        if(columns == 4){
-//            return new RemoteViews(context.getPackageName(), R.layout.clock_app_widget_4_cells);
-//        } else if(columns == 2){
-//            return new RemoteViews(context.getPackageName(), R.layout.clock_app_widget_2_cells);
-//        } else {
-//            return new RemoteViews(context.getPackageName(), R.layout.clock_app_widget_4_cells);
-//        }
-//    }
-//
-//    private int getCellsForSize(int size) {
-//        return (int)(Math.ceil(size + 30d)/70d);
-//    }
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
