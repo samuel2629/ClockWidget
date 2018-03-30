@@ -31,7 +31,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
+import java.util.TimeZone;
 
+import static android.content.Context.LOCATION_SERVICE;
 import static com.silho.ideo.clockwidget.widget.ClockAppWidget.ClockUpdateService.mPlace;
 
 /**
@@ -40,6 +42,7 @@ import static com.silho.ideo.clockwidget.widget.ClockAppWidget.ClockUpdateServic
 public class ClockAppWidget extends AppWidgetProvider {
 
     public static final String PACKAGE_NAME = "com.silho.ideo.clockwidget";
+    public static String mForeignPlace;
 
     public static class ClockUpdateService extends Service {
 
@@ -163,6 +166,16 @@ public class ClockAppWidget extends AppWidgetProvider {
 
     private static RemoteViews updateViews(Context context, AppWidgetManager appWidgetManager, int appWidgetId){
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.clock_app_widget_4_cells);
+
+
+        // TODO : if automatic gmt timezone to normal
+        if(mForeignPlace != null){
+            remoteViews.setTextViewText(R.id.appwidgetPlaceTv, mForeignPlace);
+            context.startService(new Intent(context, ClockUpdateService.class));
+        } else {
+            remoteViews.setTextViewText(R.id.appwidgetPlaceTv, mPlace);
+        }
+
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
         SimpleDateFormat formatterTime = new SimpleDateFormat("HH:mm");
         SimpleDateFormat formatterDate = new SimpleDateFormat("EEEE dd MMMM ");
@@ -171,7 +184,6 @@ public class ClockAppWidget extends AppWidgetProvider {
 
         remoteViews.setTextViewText(R.id.appwidgetTimeTv, time);
         remoteViews.setTextViewText(R.id.appwidgetDateTv, date);
-        remoteViews.setTextViewText(R.id.appwidgetPlaceTv, mPlace);
 
         onClickWidget(context, remoteViews, appWidgetId, appWidgetManager);
 
@@ -217,6 +229,16 @@ public class ClockAppWidget extends AppWidgetProvider {
     public void onDisabled(Context context) {
         context.stopService(new Intent(context, ClockUpdateService.class));
 
+    }
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        try {
+            mForeignPlace = intent.getStringExtra(context.getString(R.string.foreign_place_key));
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        super.onReceive(context, intent);
     }
 }
 

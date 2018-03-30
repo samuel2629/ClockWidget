@@ -9,8 +9,13 @@
         android:title="Change Metric"/>
 
     <ListPreference
-        android:key="gmt-preferences"
+        android:key="@string/gmt_pref"
+        android:summary="Choose GMT manually"
         android:title="Select GMT"/>
 
+    <Preference
+        android:title="Automatic GMT"
+        android:key="button"
+        android:summary="Choose GMT depending on your location."/>
 
 </PreferenceScreen>

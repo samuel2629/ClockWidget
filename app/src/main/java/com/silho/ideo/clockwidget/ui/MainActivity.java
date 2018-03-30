@@ -41,7 +41,7 @@ import java.util.TimeZone;
 
 import static com.silho.ideo.clockwidget.R.color.colorAccent;
 
-public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
+public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener{
 
     public static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 6;
     public static final int MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION = 7;

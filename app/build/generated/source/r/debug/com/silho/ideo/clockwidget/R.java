@@ -3405,14 +3405,17 @@ public final class R {
     public static final int add_widget=0x7f0c0021;
     public static final int app_name=0x7f0c0022;
     public static final int appwidget_text=0x7f0c0023;
-    public static final int network_error=0x7f0c0024;
-    public static final int on_celsius=0x7f0c0025;
-    public static final int pref_celsius_farhneit=0x7f0c0026;
-    public static final int search_menu_title=0x7f0c0027;
-    public static final int settings=0x7f0c0028;
-    public static final int status_bar_notification_info_overflow=0x7f0c0029;
-    public static final int v7_preference_off=0x7f0c002a;
-    public static final int v7_preference_on=0x7f0c002b;
+    public static final int foreign_place_key=0x7f0c0024;
+    public static final int gmt=0x7f0c0025;
+    public static final int gmt_pref=0x7f0c0026;
+    public static final int network_error=0x7f0c0027;
+    public static final int on_celsius=0x7f0c0028;
+    public static final int pref_celsius_farhneit=0x7f0c0029;
+    public static final int search_menu_title=0x7f0c002a;
+    public static final int settings=0x7f0c002b;
+    public static final int status_bar_notification_info_overflow=0x7f0c002c;
+    public static final int v7_preference_off=0x7f0c002d;
+    public static final int v7_preference_on=0x7f0c002e;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0d0000;

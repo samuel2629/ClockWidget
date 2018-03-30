@@ -8,4 +8,7 @@
     <string name="action_settings">action_settings</string>
     <string name="pref_celsius_farhneit">celsiusFarnheit</string>
     <string name="on_celsius">onCelsius</string>
+    <string name="gmt">gmt</string>
+    <string name="gmt_pref">gmt-preferences</string>
+    <string name="foreign_place_key">foreignPlaceKey</string>
 </resources>
