@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:textColor="#ffffffff"
+            android:textColor="@color/colorPrimaryDark"
             android:contentDescription="@string/appwidget_text"
             tools:text="12:25"
             android:textSize="48sp"/>
@@ -33,7 +33,7 @@
 
             <TextView
                 android:id="@+id/appwidgetDateTv"
-                android:textColor="#ffffffff"
+                android:textColor="@color/colorPrimaryDark"
                 tools:text="Jeudi 8 Mars 2018"
                 android:textSize="16sp"
                 android:textStyle="italic|bold"
@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/appwidgetPlaceTv"
-                android:textColor="#ffffffff"
+                android:textColor="@color/colorPrimaryDark"
                 android:textStyle="italic"
                 android:ellipsize="end"
                 android:maxLines="1"

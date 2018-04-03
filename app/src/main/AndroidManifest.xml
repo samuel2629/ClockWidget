@@ -41,7 +41,6 @@
                 <action android:name="com.silho.clockwidget.action.UPDATE"/>
             </intent-filter>
         </service>
-        <service android:name=".utils.LocationTracker"/>
         <service android:name=".utils.LocationService"/>
 
         <activity

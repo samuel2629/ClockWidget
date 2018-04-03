@@ -12,6 +12,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Parcelable;
 import android.provider.AlarmClock;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,17 +54,24 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     @BindView(R.id.humidityValue) TextView mHumidityValue;
     @BindView(R.id.precipValue) TextView mPrecipValue;
     @BindView(R.id.iconTime) ImageView mIconTime;
+    @BindView(R.id.progressBar) ProgressBar mProgressBar;
+
     private List<Datum_> mHours;
     private List<Datum__> mDays;
+    private SharedPreferences.Editor mEditor;
+
     private BroadcastReceiver mMessageReceiver =  new BroadcastReceiver(){
         @Override
         public void onReceive(Context context, Intent intent) {
-            double latitude = intent.getDoubleExtra("latitude", 0);
-            double longitude = intent.getDoubleExtra("longitude", 0);
-            String place = intent.getStringExtra("place");
-            getWeatherRoot(latitude, longitude, place);
+            double latitude = intent.getDoubleExtra(getResources().getString(R.string.latitude), 0);
+            double longitude = intent.getDoubleExtra(getResources().getString(R.string.longitude), 0);
+            String place = intent.getStringExtra(getResources().getString(R.string.place));
+            saveLocationInfos(latitude, longitude, place);
+            if(isNetworkAvailable())
+                getWeatherRoot(latitude, longitude, place);
         }
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,17 +79,17 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        startService(new Intent(this, LocationService.class));
-
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
-        setTitle("Weather");
+        setTitle(getString(R.string.title_toolbar));
         toolbar.setTitleMargin(4,2,2,0);
         toolbar.setTitleTextColor(Color.WHITE);
 
+        startService(new Intent(this, LocationService.class));
         setUpSharedPref();
 
         if(isNetworkAvailable()) {
+            retrieveLocationInfos();
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
@@ -93,10 +103,37 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         }
     }
 
+    private void retrieveLocationInfos() {
+        if(getSharedPreferences(getPackageName(), MODE_PRIVATE).contains(getString(R.string.latitude)) &&
+                getSharedPreferences(getPackageName(), MODE_PRIVATE).contains(getString(R.string.longitude)) &&
+                getSharedPreferences(getPackageName(), MODE_PRIVATE).contains(getString(R.string.place))) {
+            double latitude = Double.parseDouble(getSharedPreferences(getPackageName(), MODE_PRIVATE).getString(getResources().getString(R.string.latitude), null));
+            double longitude = Double.parseDouble(getSharedPreferences(getPackageName(), MODE_PRIVATE).getString(getResources().getString(R.string.longitude), null));
+            String place = getSharedPreferences(getPackageName(), MODE_PRIVATE).getString(getResources().getString(R.string.place), null);
+            getWeatherRoot(latitude, longitude, place);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if(requestCode == MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION || requestCode == MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION){
+            startService(new Intent(this, LocationService.class));
+        } else {
+            Toast.makeText(this, R.string.permission_not_granted, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void saveLocationInfos(double latitude, double longitude, String place) {
+        mEditor.putString(getResources().getString(R.string.latitude), Double.toString(latitude));
+        mEditor.putString(getResources().getString(R.string.longitude), Double.toString(longitude));
+        mEditor.putString(getResources().getString(R.string.place), place);
+        mEditor.apply();
+    }
+
     private void setUpSharedPref() {
         SharedPreferences sharedPreferences = getSharedPreferences(getPackageName(), MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putBoolean(getString(R.string.on_celsius), true).apply();
+        mEditor = sharedPreferences.edit();
+        mEditor.putBoolean(getString(R.string.on_celsius), true).apply();
         sharedPreferences.registerOnSharedPreferenceChangeListener(this);
     }
 
@@ -110,6 +147,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         WeatherService.getRootWeather().weatherRoot(latitude, longitude).enqueue(new Callback<Root>() {
             @Override
             public void onResponse(Call<Root> call, Response<Root> response) {
+                mProgressBar.setVisibility(View.GONE);
                 mHours = response.body().getHourly().getData();
                 mDays = response.body().getDaily().getData();
                 getHourlyFragment();
@@ -133,7 +171,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     private void getDailyFragment() {
         DailyFragment dailyFragment = new DailyFragment();
         Bundle bundle = new Bundle();
-        bundle.putParcelableArrayList("days", (ArrayList<? extends Parcelable>) mDays);
+        bundle.putParcelableArrayList(getResources().getString(R.string.days_arraylist), (ArrayList<? extends Parcelable>) mDays);
         dailyFragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().add(R.id.dailyContainer, dailyFragment).commit();
     }
@@ -141,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     private void getHourlyFragment() {
         HourlyFragment hourlyFragment = new HourlyFragment();
         Bundle bundle = new Bundle();
-        bundle.putParcelableArrayList("hours", (ArrayList<? extends Parcelable>) mHours);
+        bundle.putParcelableArrayList(getResources().getString(R.string.hours_arraylist), (ArrayList<? extends Parcelable>) mHours);
         hourlyFragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().add(R.id.hourlyContainer, hourlyFragment).commit();
     }
@@ -192,7 +230,8 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     @Override
     protected void onResume() {
-        LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver, new IntentFilter("deliver_location"));
+        LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver,
+                new IntentFilter(getResources().getString(R.string.location_intent_filter_key)));
         super.onResume();
     }
 

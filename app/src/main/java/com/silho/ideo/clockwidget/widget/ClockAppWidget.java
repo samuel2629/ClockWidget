@@ -1,6 +1,7 @@
 package com.silho.ideo.clockwidget.widget;
 
 import android.annotation.SuppressLint;
+import android.app.ActivityManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.appwidget.AppWidgetManager;
@@ -33,8 +34,10 @@ public class ClockAppWidget extends AppWidgetProvider {
     private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            double lat = intent.getDoubleExtra("latitude", 0);
-            context.startService(new Intent(context, ClockUpdateService.class));
+            mPlace = intent.getStringExtra(context.getString(R.string.place));
+            updateTime(context);
+            if(!isMyServiceRunning(ClockUpdateService.class, context))
+                context.startService(new Intent(context, ClockUpdateService.class));
         }
     };
 
@@ -142,9 +145,7 @@ public class ClockAppWidget extends AppWidgetProvider {
     @Override
     public void onEnabled(Context context) {
         context.startService(new Intent(context, LocationService.class));
-        LocalBroadcastManager.getInstance(context).registerReceiver(mMessageReceiver, new IntentFilter("deliver_location"));
-        updateTime(context);
-        //context.startService(new Intent(context, ClockUpdateService.class));
+        LocalBroadcastManager.getInstance(context).registerReceiver(mMessageReceiver, new IntentFilter(context.getString(R.string.location_intent_filter_key)));
     }
 
     @Override
@@ -160,6 +161,16 @@ public class ClockAppWidget extends AppWidgetProvider {
             e.printStackTrace();
         }
         super.onReceive(context, intent);
+    }
+
+    private boolean isMyServiceRunning(Class<?> serviceClass, Context context) {
+        ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 

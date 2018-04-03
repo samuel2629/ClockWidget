@@ -1,6 +1,7 @@
 <android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -13,7 +14,7 @@
             android:id="@+id/my_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="?attr/colorAccent"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
@@ -22,7 +23,7 @@
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorPrimary"
                         android:paddingLeft="16dp"
                         android:paddingRight="16dp"
                         android:paddingTop="8dp">
@@ -53,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:text="Aix-en-provence, FR"
+                android:text="--"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"/>
 
@@ -135,8 +136,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        </FrameLayout>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
 
+        </FrameLayout>
 
         <TextView
             android:layout_width="match_parent"

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
+ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
 MERGED from [com.android.support:preference-v7:26.1.0] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\preference-v7-26.1.0.aar\6dcfa15c2f8eed41891ac42ba6273b71\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\f4ace0dda0a899281a55b7d1dbf60e2c\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\7e85fe4c282e443b9bbad0a6fdf7adbe\AndroidManifest.xml:2:1-11:12
@@ -18,20 +18,20 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Samuel\.g
 MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\153492bd2ffc7d3e725650ddf4ace829\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0cddf134586f971bf13bb6644cad6ebe\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\9b773c8cf61e173f3fc1f897ee1b17e5\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
 	package
 		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:11-47
 		INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
+		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-57:12
+		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:3:11-69
@@ -56,7 +56,7 @@ ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\Androi
 	android:name
 		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:9:22-64
 application
-ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:11:5-55:19
+ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:11:5-54:19
 MERGED from [com.android.support:preference-v7:26.1.0] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\preference-v7-26.1.0.aar\6dcfa15c2f8eed41891ac42ba6273b71\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:preference-v7:26.1.0] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\preference-v7-26.1.0.aar\6dcfa15c2f8eed41891ac42ba6273b71\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Samuel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\f4ace0dda0a899281a55b7d1dbf60e2c\AndroidManifest.xml:25:5-29:19
@@ -139,28 +139,24 @@ action#com.silho.clockwidget.action.UPDATE
 ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
 		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:41:25-75
-service#com.silho.ideo.clockwidget.utils.LocationTracker
+service#com.silho.ideo.clockwidget.utils.LocationService
 ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:44:9-57
 	android:name
 		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:44:18-55
-service#com.silho.ideo.clockwidget.utils.LocationService
-ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:45:9-57
-	android:name
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:45:18-55
 activity#com.silho.ideo.clockwidget.settings.SettingsActivity
-ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:47:9-54:20
+ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:46:9-53:20
 	android:parentActivityName
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:50:13-58
+		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:49:13-58
 	android:label
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:49:13-52
+		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:48:13-52
 	android:name
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:48:13-54
+		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:47:13-54
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:51:13-53:51
+ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:50:13-52:51
 	android:value
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:53:17-49
+		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:52:17-49
 	android:name
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:52:17-63
+		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:51:17-63
 uses-sdk
 INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml

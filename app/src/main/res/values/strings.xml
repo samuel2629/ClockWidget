@@ -2,7 +2,7 @@
     <string name="app_name">ClockWidget</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
-    <string name="network_error">Network Connection Error, Please Retry.</string>
+    <string name="network_error">Network Connection Error.</string>
     <string name="access_alarms">Access Alarms</string>
     <string name="settings">Settings</string>
     <string name="action_settings">action_settings</string>
@@ -12,4 +12,12 @@
     <string name="gmt_pref">gmt-preferences</string>
     <string name="foreign_place_key">foreignPlaceKey</string>
     <string name="error_getting_weather">Error getting weather, please retry</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="place">place</string>
+    <string name="permission_not_granted">The permissions weren\'t granted.</string>
+    <string name="location_intent_filter_key">deliver_location</string>
+    <string name="hours_arraylist">hours</string>
+    <string name="days_arraylist">days</string>
+    <string name="title_toolbar">Weather</string>
 </resources>

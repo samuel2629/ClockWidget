@@ -12,6 +12,8 @@ import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
+import com.silho.ideo.clockwidget.R;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,10 +56,10 @@ public class LocationService extends Service {
         }
 
         private void sendLocation(Location location, String place) {
-            Intent intent = new Intent("deliver_location");
-            intent.putExtra("latitude", location.getLatitude());
-            intent.putExtra("longitude", location.getLongitude());
-            intent.putExtra("place", place);
+            Intent intent = new Intent(getString(R.string.location_intent_filter_key));
+            intent.putExtra(getResources().getString(R.string.latitude), location.getLatitude());
+            intent.putExtra(getResources().getString(R.string.longitude), location.getLongitude());
+            intent.putExtra(getResources().getString(R.string.place), place);
             LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
         }
 
@@ -95,13 +97,6 @@ public class LocationService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId)
     {
         Log.e(TAG, "onStartCommand");
-        super.onStartCommand(intent, flags, startId);
-        return START_STICKY;
-    }
-
-    @Override
-    public void onCreate() {
-
         mGeocoder = new Geocoder(this, Locale.getDefault());
 
         Log.e(TAG, "onCreate");
@@ -124,6 +119,8 @@ public class LocationService extends Service {
         } catch (IllegalArgumentException ex) {
             Log.d(TAG, "gps provider does not exist " + ex.getMessage());
         }
+        super.onStartCommand(intent, flags, startId);
+        return START_STICKY;
     }
 
     @Override
