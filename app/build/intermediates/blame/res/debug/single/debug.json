@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_snowy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_snowy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -16,8 +20,24 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_windy_variant_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_windy_variant_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_snowy_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_snowy_rainy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_windy_variant_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_windy_variant_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_night.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_night.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_preference_recyclerview.xml.flat",
@@ -36,8 +56,16 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_partlycloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_partlycloudy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_fog_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_fog_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -48,12 +76,12 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -64,8 +92,16 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_rainy_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_access_alarms_black_24dp.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_access_alarms_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_sunny_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_sunny_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -88,16 +124,20 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\layout\\hourly_forecast_fragment.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_snowy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_snowy_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_view_list_nav_layout.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -156,24 +196,32 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_cloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_cloudy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_partlycloudy.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_partlycloudy.xml"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
-    },
-    {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -184,6 +232,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_cloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_cloudy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_btn_check_material.xml"
     },
@@ -192,8 +244,20 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_degree.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\degree.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_snowy_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_snowy_rainy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_rainy.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -208,6 +272,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_partlycloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_partlycloudy_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
@@ -216,12 +284,32 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color\\abc_tint_edittext.xml"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_snowy_rainy.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_snowy_rainy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_sunny_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_sunny_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_partlycloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_partlycloudy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_snowy_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_snowy_rainy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_fog.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_fog.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
@@ -232,28 +320,32 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\13503b301c4edb9eaaa442d8c477dd71\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_night.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_night.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
@@ -268,16 +360,28 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_windy_variant_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_windy_variant_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_windy_variant_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_windy_variant_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_rainy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
@@ -286,6 +390,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_fog_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_fog_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
@@ -308,6 +416,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_fog.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_fog.xml"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_preference_list_fragment.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-26.1.0.aar\\6dcfa15c2f8eed41891ac42ba6273b71\\res\\layout\\preference_list_fragment.xml"
     },
@@ -316,20 +428,44 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_night_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_night_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_snowy_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_snowy_rainy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_sunny_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_sunny_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\layout\\notification_template_part_time.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_cloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_cloudy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_rainy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_snowy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_snowy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
@@ -338,6 +474,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_snowy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_snowy_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -364,12 +504,16 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_partlycloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_partlycloudy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
@@ -392,6 +536,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_night_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_night_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_dark.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\tooltip_frame_dark.xml"
     },
@@ -400,16 +548,28 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_screen_simple.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_windy_variant_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_windy_variant_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_snowy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_snowy_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_default.xml.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color\\abc_tint_default.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_default.xml.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color\\abc_tint_default.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_rainy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
@@ -420,6 +580,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_fog_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_fog_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_edit_text_material.xml"
     },
@@ -428,16 +592,24 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_windy_variant_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_windy_variant_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_fog_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_fog_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_access_alarms_black_24dp.png.flat",
@@ -448,6 +620,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_sunny_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_sunny_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
@@ -456,8 +632,16 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_windy_variant.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_windy_variant.xml"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_partlycloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_partlycloudy_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
@@ -476,12 +660,32 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_night_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_night_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_sunny.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_sunny.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_screen_content_include.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_degree.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\degree.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_night.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_night.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_snowy_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_snowy_rainy_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_daily_list_item.xml.flat",
@@ -498,6 +702,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_exit.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_night_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_night_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -520,16 +728,32 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_night.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_night.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_cloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_cloudy_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_partlycloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_partlycloudy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_partlycloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_partlycloudy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
@@ -540,6 +764,14 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\xml\\pref_visualiser.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_snowy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_snowy_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_night_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_night_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_menu_overflow_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
@@ -548,32 +780,40 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_title_material.xml.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_alert_dialog_title_material.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_title_material.xml.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow_custom.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\13503b301c4edb9eaaa442d8c477dd71\\res\\layout\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_top.xml.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_night.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_night.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_top.xml.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_snowy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_snowy.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -584,6 +824,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_cloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_cloudy_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
@@ -592,12 +836,24 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_access_alarms_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_night_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_night_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_snowy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_snowy_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_fog_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_fog_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -606,6 +862,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_snowy_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_snowy_rainy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -620,8 +880,28 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_cloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_cloudy_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_sunny_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_sunny_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_cloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_cloudy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_partlycloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_partlycloudy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_windy_variant_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_windy_variant_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_borderless_material.xml.flat",
@@ -632,24 +912,56 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_cloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_cloudy_white_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_hourly_list_item.xml.flat",
-        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\layout\\hourly_list_item.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_hourly_list_item.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\layout\\hourly_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_snowy_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_snowy_rainy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_sunny.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_sunny.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_snowy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_snowy_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_night_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_night_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_night_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_night_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_partlycloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_partlycloudy_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_cloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_cloudy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_spinner.xml.flat",
@@ -660,6 +972,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_fog_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_fog_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
@@ -668,12 +984,16 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
-        "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_sunny_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_sunny_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_tooltip.xml.flat",
@@ -692,6 +1012,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_snowy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_snowy_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -708,12 +1032,20 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_partlycloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_partlycloudy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_cloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_cloudy.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
@@ -736,16 +1068,48 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_arrow_back_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_sunny_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_sunny_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_partlycloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_partlycloudy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_snowy_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_snowy_rainy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_fog_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_fog_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_rainy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_snowy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_snowy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_sunny_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_sunny_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_snowy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_snowy.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -754,6 +1118,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_windy_variant_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_windy_variant_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -786,6 +1154,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\13503b301c4edb9eaaa442d8c477dd71\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_partlycloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_partlycloudy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -836,20 +1208,44 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_windy_variant.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_windy_variant.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_fog_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_fog_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_access_alarms_black_24dp.xml.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_access_alarms_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_rainy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_night_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_night_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_windy_variant_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_windy_variant_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_partlycloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_partlycloudy.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
@@ -868,8 +1264,20 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\menu\\main_menu.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_windy_variant_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_windy_variant_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_partlycloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_partlycloudy_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_cloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_cloudy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_btn_checkable.xml.flat",
@@ -896,8 +1304,28 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_snowy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_snowy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_rainy_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_rainy_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_fog_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_fog_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_snowy_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_snowy_rainy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
@@ -910,6 +1338,14 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_cloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_cloudy_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_cloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_cloudy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -928,12 +1364,20 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_cloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_cloudy_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_rainy.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_rainy.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
@@ -956,8 +1400,28 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_windy_variant_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_windy_variant_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_windy_variant.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_windy_variant.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_sunny_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_sunny_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_cloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_cloudy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_rainy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -972,8 +1436,24 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_rainy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_windy_variant_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_windy_variant_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_snowy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_snowy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_rainy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_preference_information.xml.flat",
@@ -984,8 +1464,20 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_fog_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_fog_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_sunny_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_sunny_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_preference_dropdown.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-26.1.0.aar\\6dcfa15c2f8eed41891ac42ba6273b71\\res\\layout-v11\\preference_dropdown.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_snowy.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_snowy.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1000,6 +1492,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_sunny_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_sunny_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
@@ -1010,6 +1506,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_partlycloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_partlycloudy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1028,16 +1528,44 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_settings_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_partlycloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_partlycloudy_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_sunny_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_sunny_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_sunny_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_sunny_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_windy_variant_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_windy_variant_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_sunny_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_sunny_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_arrow_back_black_24dp.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_cloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_cloudy_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_cloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_cloudy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
@@ -1046,6 +1574,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_sunny_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_sunny_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -1060,8 +1592,20 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_windy_variant_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_windy_variant_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-ldrtl-xhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_windy_variant_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_windy_variant_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_windy_variant_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_windy_variant_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1080,6 +1624,14 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_windy_variant.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_windy_variant.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_fog_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_fog_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -1092,12 +1644,20 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_snowy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_snowy_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_night_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_night_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
@@ -1108,12 +1668,24 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_arrow_back_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_sunny_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_sunny_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_fog_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_fog_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\13503b301c4edb9eaaa442d8c477dd71\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_switch_track.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_snowy_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_snowy_rainy_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
@@ -1136,12 +1708,28 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_sunny.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_sunny.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_cloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_cloudy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_snowy_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_snowy_rainy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_rainy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1156,12 +1744,32 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_rainy_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_fog_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_fog_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_arrow_back_black_24dp.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_windy_variant_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_windy_variant_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_rainy_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_partlycloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_partlycloudy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1180,6 +1788,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_snowy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_snowy_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png"
     },
@@ -1188,28 +1800,72 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_snowy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_snowy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_sunny_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_sunny_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_night_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_night_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_cloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_cloudy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_fog.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_fog.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_snowy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_snowy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_snowy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_snowy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_rainy_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_degree.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\degree.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\xml_clock_app_widget_info.xml.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\xml\\clock_app_widget_info.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_snowy_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_snowy_rainy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_snowy_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_snowy_rainy.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -1220,16 +1876,52 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_sunny_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_sunny_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_fog_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_fog_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_sunny_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_sunny_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_snowy_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_snowy_rainy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_snowy_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_snowy_rainy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_rainy_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_windy_variant_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_windy_variant_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_cloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_cloudy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_partlycloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_partlycloudy_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
@@ -1244,6 +1936,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_night.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_night.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
@@ -1256,8 +1952,32 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_windy_variant_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_windy_variant_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_fog_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_fog_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_sunny.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_sunny.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_rainy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_partlycloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_partlycloudy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_rainy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
@@ -1272,8 +1992,20 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_sunny.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_sunny.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_preference_category.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-26.1.0.aar\\6dcfa15c2f8eed41891ac42ba6273b71\\res\\layout\\preference_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_sunny_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_sunny_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_snowy_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_snowy_rainy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1284,12 +2016,52 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_fog_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_fog_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_night_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_night_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_windy_variant.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_windy_variant.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_fog.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_fog.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_snowy_rainy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_snowy_rainy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_snowy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_snowy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_rainy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\13503b301c4edb9eaaa442d8c477dd71\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_snowy_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_snowy_rainy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_cloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_cloudy_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_rainy_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
@@ -1328,12 +2100,24 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_partlycloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_partlycloudy_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_windy_variant_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_windy_variant_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_cloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_cloudy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1392,6 +2176,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_weather_night.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\weather_night.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
@@ -1404,8 +2192,28 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_fog_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_fog_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_night_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_night_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_snowy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_snowy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_weather_cloudy.xml.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\weather_cloudy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_snowy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_snowy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
@@ -1422,6 +2230,14 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_fog_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_fog_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_partlycloudy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_partlycloudy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_voice_search_api_material.xml.flat",
@@ -1446,6 +2262,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_windy_variant.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_windy_variant.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1480,6 +2300,18 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_sunny.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_sunny.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_partlycloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_partlycloudy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_snowy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_snowy_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -1512,28 +2344,64 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_settings_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_rainy.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_partlycloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_partlycloudy_white_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_snowy_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_snowy_rainy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings_black_24dp.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_settings_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_snowy_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_snowy_rainy_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_snowy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_snowy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_snowy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_snowy_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_cloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_cloudy_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\layout\\notification_action_tombstone.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_snowy_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_snowy_rainy_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_night_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_night_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1542,6 +2410,14 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-ldrtl-hdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_night_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_night_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_snowy_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_snowy_rainy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1556,6 +2432,10 @@
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_access_alarms_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_snowy_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_snowy_rainy_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
@@ -1568,6 +2448,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_night_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_night_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -1576,12 +2460,24 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_partlycloudy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_partlycloudy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_cloudy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_cloudy_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_night_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_night_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -1612,8 +2508,16 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_cloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_cloudy_white_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_light.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_cloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_cloudy_white_48dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -1628,8 +2532,16 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_night_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_night_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_weather_sunny.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\weather_sunny.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1648,8 +2560,16 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\0cddf134586f971bf13bb6644cad6ebe\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_night_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_night_white_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_partlycloudy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_partlycloudy_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1664,12 +2584,40 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_partlycloudy_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_partlycloudy_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_access_alarms_black_24dp.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_access_alarms_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_weather_windy_variant.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\weather_windy_variant.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_rainy_white_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_fog.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_fog.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_weather_fog_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_weather_fog_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_degree.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\degree.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_weather_fog.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\weather_fog.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1686,6 +2634,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_rainy_white_36dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_rainy_white_36dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1716,8 +2668,24 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_night_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_night_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_fog_white_48dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_fog_white_48dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_preference.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-26.1.0.aar\\6dcfa15c2f8eed41891ac42ba6273b71\\res\\layout-v11\\preference.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weather_rainy.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\weather_rainy.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_rainy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_colored_material.xml.flat",
@@ -1732,6 +2700,10 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_weather_snowy_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_weather_snowy_rainy_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -1740,12 +2712,24 @@
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_weather_snowy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-mdpi\\ic_weather_snowy_white_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_arrow_back_black_24dp.png.flat",
         "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_arrow_back_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_weather_fog.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\weather_fog.png"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_weather_snowy_rainy_white_24dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-xhdpi\\ic_weather_snowy_rainy_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
@@ -1778,6 +2762,10 @@
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "C:\\Users\\Samuel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f4ace0dda0a899281a55b7d1dbf60e2c\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_weather_snowy_rainy_white_18dp.png.flat",
+        "source": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\src\\main\\res\\mipmap-hdpi\\ic_weather_snowy_rainy_white_18dp.png"
     },
     {
         "merged": "C:\\Users\\Samuel\\AndroidStudioProjects\\ClockWidget\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",

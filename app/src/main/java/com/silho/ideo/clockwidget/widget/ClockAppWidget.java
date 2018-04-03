@@ -10,31 +10,17 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
+import android.support.v4.content.LocalBroadcastManager;
 import android.widget.RemoteViews;
-import android.widget.Toast;
 
 import com.silho.ideo.clockwidget.ui.MainActivity;
 import com.silho.ideo.clockwidget.R;
+import com.silho.ideo.clockwidget.utils.LocationService;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.List;
-import java.util.Locale;
-import java.util.TimeZone;
-
-import static android.content.Context.LOCATION_SERVICE;
-import static com.silho.ideo.clockwidget.widget.ClockAppWidget.ClockUpdateService.mPlace;
 
 /**
  * Implementation of App Widget functionality.
@@ -43,50 +29,16 @@ public class ClockAppWidget extends AppWidgetProvider {
 
     public static final String PACKAGE_NAME = "com.silho.ideo.clockwidget";
     public static String mForeignPlace;
+    public static String mPlace;
+    private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            double lat = intent.getDoubleExtra("latitude", 0);
+            context.startService(new Intent(context, ClockUpdateService.class));
+        }
+    };
 
     public static class ClockUpdateService extends Service {
-
-
-        private static final long LOCATION_REFRESH_TIME = 30;
-        private float LOCATION_REFRESH_DISTANCE = 1;
-
-        private LocationManager mLocationManager;
-        private Geocoder mGeocoder;
-
-        private List<Address> mAddresses;
-        public static String mPlace;
-
-        private LocationListener mLocationListener = new LocationListener() {
-            @Override
-            public void onLocationChanged(Location location) {
-                location.getLongitude();
-                location.getLatitude();
-                location.describeContents();
-                try {
-                    mAddresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-                    mPlace = mAddresses.get(0).getLocality();
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            @Override
-            public void onStatusChanged(String s, int i, Bundle bundle) {
-
-            }
-
-            @Override
-            public void onProviderEnabled(String s) {
-
-            }
-
-            @Override
-            public void onProviderDisabled(String s) {
-
-            }
-        };
-
 
         public ClockUpdateService(){}
 
@@ -110,24 +62,6 @@ public class ClockAppWidget extends AppWidgetProvider {
         @Override
         public void onCreate() {
             super.onCreate();
-
-            mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-            mGeocoder = new Geocoder(this, Locale.getDefault());
-
-            if(isNetworkAvailable()) {
-                mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
-                        LOCATION_REFRESH_TIME, LOCATION_REFRESH_DISTANCE, mLocationListener);
-
-                Location location = mLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                try {
-                    mAddresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 5);
-                    mPlace = mAddresses.get(0).getLocality();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            } else {
-                Toast.makeText(this, R.string.network_error, Toast.LENGTH_SHORT).show();
-            }
             mIntentFilter = new IntentFilter();
             mIntentFilter.addAction(Intent.ACTION_TIME_TICK);
             mIntentFilter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
@@ -151,27 +85,13 @@ public class ClockAppWidget extends AppWidgetProvider {
             }
             return super.onStartCommand(intent, flags, startId);
         }
-
-        protected boolean isNetworkAvailable() {
-            ConnectivityManager manager = (ConnectivityManager)
-                    getSystemService(Context.CONNECTIVITY_SERVICE);
-            NetworkInfo networkInfo = manager.getActiveNetworkInfo();
-            boolean isAvailable = false;
-            if (networkInfo != null && networkInfo.isConnected()) {
-                isAvailable = true;
-            }
-            return isAvailable;
-        }
     }
 
     private static RemoteViews updateViews(Context context, AppWidgetManager appWidgetManager, int appWidgetId){
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.clock_app_widget_4_cells);
-
-
         // TODO : if automatic gmt timezone to normal
         if(mForeignPlace != null){
             remoteViews.setTextViewText(R.id.appwidgetPlaceTv, mForeignPlace);
-            context.startService(new Intent(context, ClockUpdateService.class));
         } else {
             remoteViews.setTextViewText(R.id.appwidgetPlaceTv, mPlace);
         }
@@ -221,14 +141,15 @@ public class ClockAppWidget extends AppWidgetProvider {
 
     @Override
     public void onEnabled(Context context) {
+        context.startService(new Intent(context, LocationService.class));
+        LocalBroadcastManager.getInstance(context).registerReceiver(mMessageReceiver, new IntentFilter("deliver_location"));
         updateTime(context);
-        context.startService(new Intent(context, ClockUpdateService.class));
+        //context.startService(new Intent(context, ClockUpdateService.class));
     }
 
     @Override
     public void onDisabled(Context context) {
         context.stopService(new Intent(context, ClockUpdateService.class));
-
     }
 
     @Override

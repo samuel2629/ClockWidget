@@ -10,6 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.silho.ideo.clockwidget.R;
+import com.silho.ideo.clockwidget.adapter.DayAdapter;
+import com.silho.ideo.clockwidget.model.Datum__;
+
+import java.util.ArrayList;
 
 /**
  * Created by Samuel on 29/03/2018.
@@ -21,9 +25,13 @@ public class DailyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.daily_forecast_fragment, container, false);
+        ArrayList<Datum__> days = getArguments().getParcelableArrayList("days");
+        DayAdapter dayAdapter = new DayAdapter(getContext(), days);
         RecyclerView recyclerView = view.findViewById(R.id.dailyRecyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setAdapter(dayAdapter);
+        recyclerView.hasFixedSize();
         return view;
     }
 }

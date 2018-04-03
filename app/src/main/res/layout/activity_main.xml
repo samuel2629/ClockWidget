@@ -1,163 +1,154 @@
-<LinearLayout
+<android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
-                    android:background="#ffffffff"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:paddingTop="8dp">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/temperatureLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"/>
+
+            <ImageView
+                android:id="@+id/degreeImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/degree"
+                android:layout_alignTop="@+id/temperatureLabel"
+                android:layout_toEndOf="@+id/temperatureLabel"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/locationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Aix-en-provence, FR"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:id="@+id/iconTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/locationLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temperatureLabel"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/humidityLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="HUMIDITY"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/humidityValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:gravity="center_horizontal"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/precipLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="RAIN/SNOW?"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/precipValue"
+                        android:text="--"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/temperatureLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="--"
-            android:textColor="@android:color/black"
-            android:textSize="50sp"/>
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffffff"/>
 
-        <ImageView
-            android:id="@+id/degreeImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/temperatureLabel"
-            android:layout_marginTop="50dp"
-            android:layout_toEndOf="@+id/temperatureLabel"
-            android:layout_toRightOf="@+id/temperatureLabel"/>
+        <FrameLayout
+            android:id="@+id/hourlyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+
 
         <TextView
-            android:id="@+id/timeLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/degreeImageView"
-            android:layout_centerHorizontal="true"
-            android:text="..."
-            android:textColor="@android:color/black"
-            android:textSize="18sp"/>
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffffff"/>
 
-        <TextView
-            android:id="@+id/locationLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="Aix-en-provence, FR"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"/>
-
-        <ImageView
-            android:id="@+id/relativeLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/locationLabel"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <FrameLayout
+            android:id="@+id/dailyContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/temperatureLabel"
-            android:layout_centerHorizontal="true"
-            android:orientation="horizontal"
-            android:weightSum="100">
+            >
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="50"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/humidityLabel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="HUMIDITY"
-                    android:textColor="@android:color/black"/>
-
-                <TextView
-                    android:id="@+id/humidityValue"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:textColor="@android:color/white"
-                    android:textSize="24sp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="50"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/precipLabel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="RAIN/SNOW?"
-                    android:textColor="@android:color/black"/>
-
-                <TextView
-                    android:id="@+id/precipValue"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"/>
-            </LinearLayout>
+        </FrameLayout>
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/refreshImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/refreshImageView"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
-
-    </RelativeLayout>
-
-    <FrameLayout
-        android:id="@+id/hourlyContainer"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/dailyContainer"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2">
-
-    </FrameLayout>
-</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
