@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     public static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 6;
     public static final int MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION = 7;
+
     @BindView(R.id.temperatureLabel) TextView mTempLabel;
     @BindView(R.id.locationLabel) TextView mLocationLabel;
     @BindView(R.id.humidityValue) TextView mHumidityValue;
@@ -71,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                 getWeatherRoot(latitude, longitude, place);
         }
     };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                 getHourlyFragment();
                 getDailyFragment();
                 Currently currently = response.body().getCurrently();
-                mTempLabel.setText(String.valueOf(Math.round(currently.getTemperature())));
+                mTempLabel.setText(String.format("%s°", String.valueOf(Math.round(currently.getTemperature()))));
                 mLocationLabel.setText(place);
                 mPrecipValue.setText(String.format("%s %%", String.valueOf(Math.round(currently.getPrecipProbability() * 100))));
                 mHumidityValue.setText(String.format("%s %%", String.valueOf(Math.round(currently.getHumidity() * 100))));

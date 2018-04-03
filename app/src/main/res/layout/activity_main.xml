@@ -39,14 +39,6 @@
                 android:textColor="@android:color/white"
                 android:textSize="50sp"/>
 
-            <ImageView
-                android:id="@+id/degreeImageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/degree"
-                android:layout_alignTop="@+id/temperatureLabel"
-                android:layout_toEndOf="@+id/temperatureLabel"/>
-
             <TextView
                 android:layout_marginTop="8dp"
                 android:id="@+id/locationLabel"
