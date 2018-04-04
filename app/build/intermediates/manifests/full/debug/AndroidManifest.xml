@@ -50,7 +50,6 @@
                 <action android:name="com.silho.clockwidget.action.UPDATE" />
             </intent-filter>
         </service>
-        <service android:name="com.silho.ideo.clockwidget.utils.LocationService" />
 
         <activity
             android:name="com.silho.ideo.clockwidget.settings.SettingsActivity"

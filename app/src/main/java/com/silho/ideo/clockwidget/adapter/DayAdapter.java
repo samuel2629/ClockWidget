@@ -19,12 +19,14 @@ import java.util.ArrayList;
 
 public class DayAdapter extends RecyclerView.Adapter<DayAdapter.ViewHolder> {
 
+    private final boolean mIsCelsius;
     private Context mContext;
     private ArrayList<Datum__> mDays;
 
-    public DayAdapter(Context context, ArrayList<Datum__> days){
+    public DayAdapter(Context context, ArrayList<Datum__> days, boolean isCelsius){
         mContext = context;
         mDays = days;
+        mIsCelsius = isCelsius;
     }
 
     @Override
@@ -58,7 +60,11 @@ public class DayAdapter extends RecyclerView.Adapter<DayAdapter.ViewHolder> {
         }
 
         public void bindDay(Datum__ daily) {
-            tempTv.setText(String.format("%s°", String.valueOf(Math.round(daily.getTemperatureMin()))
+            if(mIsCelsius)
+                tempTv.setText(String.format("%s°", String.valueOf(daily.getMinTempCelsius())
+                        + "/" + String.valueOf(daily.getMaxTempCelsius())));
+            else
+                tempTv.setText(String.format("%s°", String.valueOf(Math.round(daily.getTemperatureMin()))
                     + "/" + String.valueOf(Math.round(daily.getTemperatureMax()))));
             dayTv.setText(daily.getDayOfTheWeek());
             iconIv.setImageResource(daily.getIconId(daily.getIcon()));

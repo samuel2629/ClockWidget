@@ -253,8 +253,13 @@ public class Currently implements Parcelable
         this.precipProbability = precipProbability;
     }
 
-    public Double getTemperature() {
-        return temperature;
+    public String getTemperature() {
+        return String.format("%s°", String.valueOf(Math.round(temperature)));
+    }
+
+    public int getTemperatureCelsius(){
+        double temp = (temperature * 5)/41;
+        return (int) Math.round(temp);
     }
 
     public void setTemperature(Double temperature) {

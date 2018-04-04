@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:initialKeyguardLayout="@layout/clock_app_widget_4_cells"
-                    android:initialLayout="@layout/clock_app_widget_4_cells"
-                    android:minHeight="40dp"
-                    android:minWidth="180dp"
-                    android:previewImage="@drawable/example_appwidget_preview"
+                    android:initialKeyguardLayout="@layout/app_wid"
+                    android:initialLayout="@layout/app_wid"
+                    android:minHeight="110dp"
+                    android:minWidth="250dp"
+                    android:previewImage="@drawable/meteo_1"
                     android:resizeMode="horizontal|vertical"
                     android:updatePeriodMillis="0"
                     android:widgetCategory="home_screen">

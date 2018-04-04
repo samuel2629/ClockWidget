@@ -139,10 +139,6 @@ action#com.silho.clockwidget.action.UPDATE
 ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
 		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:41:25-75
-service#com.silho.ideo.clockwidget.utils.LocationService
-ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:44:9-57
-	android:name
-		ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:44:18-55
 activity#com.silho.ideo.clockwidget.settings.SettingsActivity
 ADDED from C:\Users\Samuel\AndroidStudioProjects\ClockWidget\app\src\main\AndroidManifest.xml:46:9-53:20
 	android:parentActivityName

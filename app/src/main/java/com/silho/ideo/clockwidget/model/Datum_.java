@@ -336,6 +336,11 @@ public class Datum_ implements Parcelable
         this.precipType = precipType;
     }
 
+    public int getTemperatureCelsius(){
+        double temp = (getTemperature() * 5)/41;
+        return (int) Math.round(temp);
+    }
+
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeValue(time);
         dest.writeValue(summary);

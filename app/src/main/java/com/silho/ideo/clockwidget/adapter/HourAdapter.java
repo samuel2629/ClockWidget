@@ -24,11 +24,13 @@ import java.util.Calendar;
 public class HourAdapter extends RecyclerView.Adapter<HourAdapter.ViewHolder> {
 
     private final ArrayList<Datum_> mHours;
+    private final boolean mIsCelsius;
     private Context mContext;
 
-    public HourAdapter(Context context, ArrayList<Datum_> hours){
+    public HourAdapter(Context context, ArrayList<Datum_> hours, boolean isCelsius){
         mContext = context;
         mHours = hours;
+        mIsCelsius = isCelsius;
     }
 
     @Override
@@ -70,7 +72,10 @@ public class HourAdapter extends RecyclerView.Adapter<HourAdapter.ViewHolder> {
             SimpleDateFormat formatterTime = new SimpleDateFormat("HH:mm");
             String date = formatterTime.format(bigInteger);
             timeTv.setText(date);
-            tempTv.setText(String.format("%s°", String.valueOf(Math.round(hourly.getTemperature()))));
+            if(mIsCelsius)
+                tempTv.setText(String.format("%s°", String.valueOf(hourly.getTemperatureCelsius())));
+            else
+                tempTv.setText(String.format("%s°", String.valueOf(Math.round(hourly.getTemperature()))));
             sumTv.setVisibility(View.GONE);
             iconIv.setImageResource(hourly.getIconId(hourly.getIcon()));
         }

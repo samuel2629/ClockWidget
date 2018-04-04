@@ -26,7 +26,8 @@ public class HourlyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.hourly_forecast_fragment, container, false);
         ArrayList<Datum_> hours = getArguments().getParcelableArrayList(getString(R.string.hours_arraylist));
-        HourAdapter hourAdapter = new HourAdapter(getContext(), hours);
+        boolean isCelsius = getArguments().getBoolean(getString(R.string.on_celsius));
+        HourAdapter hourAdapter = new HourAdapter(getContext(), hours, isCelsius);
         RecyclerView recyclerView = view.findViewById(R.id.hourlyRecyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);

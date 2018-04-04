@@ -639,6 +639,18 @@ public class Datum__ implements Parcelable
         return iconId;
     }
 
+
+    public int getMinTempCelsius(){
+        double temp = (getTemperatureMin() * 5)/41;
+        return (int) Math.round(temp);
+    }
+
+
+    public int getMaxTempCelsius(){
+        double temp = (getTemperatureMax() * 5)/41;
+        return (int) Math.round(temp);
+    }
+
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeValue(time);
         dest.writeValue(summary);

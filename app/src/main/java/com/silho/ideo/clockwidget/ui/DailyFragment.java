@@ -26,7 +26,8 @@ public class DailyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.daily_forecast_fragment, container, false);
         ArrayList<Datum__> days = getArguments().getParcelableArrayList(getString(R.string.days_arraylist));
-        DayAdapter dayAdapter = new DayAdapter(getContext(), days);
+        boolean isCelsius = getArguments().getBoolean(getString(R.string.on_celsius));
+        DayAdapter dayAdapter = new DayAdapter(getContext(), days, isCelsius);
         RecyclerView recyclerView = view.findViewById(R.id.dailyRecyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(linearLayoutManager);
