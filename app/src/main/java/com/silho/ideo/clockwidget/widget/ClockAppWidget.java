@@ -10,23 +10,34 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.preference.PreferenceManager;
+import android.provider.AlarmClock;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
 import android.widget.RemoteViews;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.silho.ideo.clockwidget.model.Root;
 import com.silho.ideo.clockwidget.retofitApi.WeatherService;
 import com.silho.ideo.clockwidget.ui.MainActivity;
 import com.silho.ideo.clockwidget.R;
+import com.silho.ideo.clockwidget.utils.MyLocation;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -46,13 +57,9 @@ public class ClockAppWidget extends AppWidgetProvider {
     private static String mWeatherSum;
     private static int mIcon;
 
-    public static class ClockUpdateService extends Service implements LocationListener {
+    public static class ClockUpdateService extends Service {
 
-        private static final String TAG = "CLOCK_WIDGET";
-        private LocationManager mLocationManager = null;
-        private static final int LOCATION_INTERVAL = 1800000;
-        private static final float LOCATION_DISTANCE = 1000f;
-        private Geocoder mGeocoder;
+        private MyLocation myLocation;
 
         public ClockUpdateService(){}
 
@@ -75,7 +82,29 @@ public class ClockAppWidget extends AppWidgetProvider {
         @SuppressLint("MissingPermission")
         @Override
         public void onCreate() {
-            getLocation();
+            myLocation = new MyLocation();
+            MyLocation.LocationResult mLocationResult = new MyLocation.LocationResult() {
+                @Override
+                public void gotLocation(Location location) {
+
+                    Geocoder geocoder = new Geocoder(ClockUpdateService.this, Locale.getDefault());
+                    List<Address> addresses = null;
+                    String place = "";
+                    try {
+                        addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    place = addresses.get(0).getLocality();
+
+                    if(isNetworkAvailable() &&  place != null)
+                        getWeatherRoot(location.getLatitude(), location.getLongitude(), place,
+                                PreferenceManager.getDefaultSharedPreferences(getApplicationContext())
+                                        .getBoolean(getString(R.string.on_celsius), true));
+                }
+            };
+
+            myLocation.getLocation(this, mLocationResult, 1800000);
             super.onCreate();
             mIntentFilter = new IntentFilter();
             mIntentFilter.addAction(Intent.ACTION_TIME_TICK);
@@ -88,9 +117,8 @@ public class ClockAppWidget extends AppWidgetProvider {
         @Override
         public void onDestroy() {
             super.onDestroy();
-            if (mLocationManager != null) {
-                mLocationManager.removeUpdates(this);
-            }
+            if(myLocation != null)
+                myLocation.removeUpdate();
             unregisterReceiver(clockChangedReceiver);
         }
 
@@ -104,73 +132,24 @@ public class ClockAppWidget extends AppWidgetProvider {
             return super.onStartCommand(intent, flags, startId);
         }
 
-        private void initializeLocationManager() {
-            Log.e(TAG, "initializeLocationManager");
-            if (mLocationManager == null) {
-                mLocationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+        protected boolean isNetworkAvailable() {
+            ConnectivityManager manager = (ConnectivityManager)
+                    getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo networkInfo = manager.getActiveNetworkInfo();
+            boolean isAvailable = false;
+            if (networkInfo != null && networkInfo.isConnected()) {
+                isAvailable = true;
             }
+            return isAvailable;
         }
 
-        private void getLocation() {
-            Log.e(TAG, "onStartCommand");
-            mGeocoder = new Geocoder(this, Locale.getDefault());
-
-            Log.e(TAG, "onCreate");
-            initializeLocationManager();
-            try {
-                mLocationManager.requestLocationUpdates(
-                        LocationManager.NETWORK_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
-                        this);
-            } catch (SecurityException ex) {
-                Log.i(TAG, "fail to request location update, ignore", ex);
-            } catch (IllegalArgumentException ex) {
-                Log.d(TAG, "network provider does not exist, " + ex.getMessage());
-            }
-            try {
-                mLocationManager.requestLocationUpdates(
-                        LocationManager.GPS_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
-                        this);
-            } catch (SecurityException ex) {
-                Log.i(TAG, "fail to request location update, ignore", ex);
-            } catch (IllegalArgumentException ex) {
-                Log.d(TAG, "gps provider does not exist " + ex.getMessage());
-            }
-        }
-
-        @Override
-        public void onLocationChanged(Location location) {
-            String place = null;
-            try {
-                List<Address> addresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-                place = addresses.get(0).getLocality();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            mPlace = place;
-            getWeatherRoot(location.getLatitude(), location.getLongitude(), place, true);
-        }
-
-        @Override
-        public void onStatusChanged(String s, int i, Bundle bundle) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(String s) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(String s) {
-
-        }
 
         private void getWeatherRoot(double latitude, double longitude, final String place, final boolean isCelsius){
             WeatherService.getRootWeather().weatherRoot(latitude, longitude).enqueue(new Callback<Root>() {
                 @Override
                 public void onResponse(Call<Root> call, Response<Root> response) {
                     mIcon = response.body().getCurrently().getIconId(response.body().getCurrently().getIcon());
-                    String temp = String.valueOf(response.body().getCurrently().getTemperature());
+                    String temp = String.valueOf(response.body().getCurrently().getTemperatureCelsius()) + "°";
                     mWeatherSum = temp;
                     updateTime(getApplicationContext());
                 }
@@ -186,12 +165,6 @@ public class ClockAppWidget extends AppWidgetProvider {
 
     private static RemoteViews updateViews(Context context, AppWidgetManager appWidgetManager, int appWidgetId){
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.app_wid);
-        // TODO : if automatic gmt timezone to normal
-//        if(mForeignPlace != null){
-//            remoteViews.setTextViewText(R.id.appwidgetPlaceTv, mForeignPlace);
-//        } else {
-//            remoteViews.setTextViewText(R.id.appwidgetPlaceTv, mPlace);
-//        }
 
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
         SimpleDateFormat formatterTime = new SimpleDateFormat("HH:mm");
@@ -199,14 +172,26 @@ public class ClockAppWidget extends AppWidgetProvider {
         String time = formatterTime.format(timeInMillis);
         String date = formatterDate.format(timeInMillis);
 
-        remoteViews.setTextViewText(R.id.appwidgetTimeTv, time);
-        remoteViews.setTextViewText(R.id.appwidgetDateTv, date);
+        remoteViews.setImageViewBitmap(R.id.appwidgetTimeTv, buildUpdate(time, context,
+                400, 130, "hvBold", 200, 130, 125));
+        remoteViews.setImageViewBitmap(R.id.appwidgetDateTv, buildUpdate(date, context,
+                400, 80, "hvItalic", 210, 60, 50));
+
         if(mWeatherSum != null && mIcon != -1) {
-            remoteViews.setTextViewText(R.id.appWidgetWeatherText, mWeatherSum);
-            remoteViews.setImageViewResource(R.id.appWidgetIconIv, mIcon);
+            String weatherAndPlace = mWeatherSum + '\n' + mPlace;
+            remoteViews.setImageViewBitmap(R.id.appWidgetWeatherText, buildUpdate(mWeatherSum, context,
+                    200, 120, "hvBold", 110, 35, 50));
         }
 
-        onClickWidget(context, remoteViews, appWidgetId, appWidgetManager);
+        Intent intent = new Intent(context, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0 , intent,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setOnClickPendingIntent(R.id.iconIv, pendingIntent);
+
+        Intent intent1 = new Intent(AlarmClock.ACTION_SHOW_ALARMS);
+        PendingIntent pendingIntent1 = PendingIntent.getActivity(context, 0, intent1,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setOnClickPendingIntent(R.id.dateAndTimeContainer, pendingIntent1);
 
         appWidgetManager.updateAppWidget(appWidgetId, remoteViews);
 
@@ -214,13 +199,21 @@ public class ClockAppWidget extends AppWidgetProvider {
 
     }
 
-    private static void onClickWidget(Context context, RemoteViews remoteViews,
-                                      int appWidgetId, AppWidgetManager appWidgetManager) {
-        Intent intent = new Intent(context, MainActivity.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0 , intent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
-        remoteViews.setOnClickPendingIntent(R.id.containerWidget, pendingIntent);
-        appWidgetManager.updateAppWidget(appWidgetId, remoteViews);
+    public static Bitmap buildUpdate(String time, Context context, int widthBitmap, int heightBitmap,
+                                     String font, int xText, int yText, int textSize) {
+        Bitmap myBitmap = Bitmap.createBitmap(widthBitmap, heightBitmap, Bitmap.Config.ARGB_8888);
+        Canvas myCanvas = new Canvas(myBitmap);
+        Paint paint = new Paint();
+        Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/"+ font +".ttf");
+        paint.setAntiAlias(true);
+        paint.setSubpixelText(true);
+        paint.setTypeface(clock);
+        paint.setStyle(Paint.Style.FILL);
+        paint.setColor(Color.WHITE);
+        paint.setTextSize(textSize);
+        paint.setTextAlign(Paint.Align.CENTER);
+        myCanvas.drawText(time, xText, yText, paint);
+        return myBitmap;
     }
 
     private static void updateTime(Context context){
@@ -259,5 +252,6 @@ public class ClockAppWidget extends AppWidgetProvider {
         }
         super.onReceive(context, intent);
     }
+
 }
 

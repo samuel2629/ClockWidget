@@ -58,11 +58,13 @@
 
             <ImageView
                 android:id="@+id/iconTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignBottom="@+id/locationLabel"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"/>
 
             <LinearLayout
                 android:id="@+id/linearLayout"

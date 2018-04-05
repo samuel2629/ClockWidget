@@ -258,7 +258,7 @@ public class Currently implements Parcelable
     }
 
     public int getTemperatureCelsius(){
-        double temp = (temperature * 5)/41;
+        double temp = (temperature - 32)/1.8;
         return (int) Math.round(temp);
     }
 

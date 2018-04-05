@@ -641,13 +641,12 @@ public class Datum__ implements Parcelable
 
 
     public int getMinTempCelsius(){
-        double temp = (getTemperatureMin() * 5)/41;
+        double temp = (getTemperatureMin() - 32)/1.8;
         return (int) Math.round(temp);
     }
 
-
     public int getMaxTempCelsius(){
-        double temp = (getTemperatureMax() * 5)/41;
+        double temp = (getTemperatureMax() - 32)/1.8;
         return (int) Math.round(temp);
     }
 

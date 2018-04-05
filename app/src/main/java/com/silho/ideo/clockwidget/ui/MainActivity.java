@@ -1,6 +1,7 @@
 package com.silho.ideo.clockwidget.ui;
 
 import android.Manifest;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,10 +14,12 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.provider.AlarmClock;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +42,7 @@ import com.silho.ideo.clockwidget.model.Datum__;
 import com.silho.ideo.clockwidget.model.Root;
 import com.silho.ideo.clockwidget.retofitApi.WeatherService;
 import com.silho.ideo.clockwidget.settings.SettingsActivity;
+import com.silho.ideo.clockwidget.utils.MyLocation;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -51,21 +55,13 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements LocationListener,
-        SharedPreferences.OnSharedPreferenceChangeListener{
+public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener{
 
     public static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 6;
     public static final int MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION = 7;
-    private static final String TAG = "CLOCK_WIDGET";
-    private LocationManager mLocationManager = null;
-    private static final int LOCATION_INTERVAL = 1800000;
-    private static final float LOCATION_DISTANCE = 1000f;
-    private Geocoder mGeocoder;
     private List<Datum_> mHours;
     private List<Datum__> mDays;
     private SharedPreferences mSharedPreferences;
-
-
 
     @BindView(R.id.temperatureLabel) TextView mTempLabel;
     @BindView(R.id.locationLabel) TextView mLocationLabel;
@@ -73,17 +69,43 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
     @BindView(R.id.precipValue) TextView mPrecipValue;
     @BindView(R.id.iconTime) ImageView mIconTime;
     @BindView(R.id.swipeRefresher) SwipeRefreshLayout mSwipeRefreshLayout;
+    private MyLocation.LocationResult mLocationResult;
+    private MyLocation myLocation;
 
+    @TargetApi(Build.VERSION_CODES.M)
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        myLocation = new MyLocation();
+        mLocationResult = new MyLocation.LocationResult() {
+            @Override
+            public void gotLocation(Location location) {
+
+                Geocoder geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
+                List<Address> addresses = null;
+                String place = "";
+                try {
+                    addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                place = addresses.get(0).getLocality();
+
+                if(isNetworkAvailable() &&  place != null)
+                    getWeatherRoot(location.getLatitude(), location.getLongitude(), place, mSharedPreferences.getBoolean(getString(R.string.on_celsius), true));
+            }
+        };
+
+        myLocation.getLocation(this, mLocationResult, 0);
+
+        getWindow().setStatusBarColor(getColor(R.color.colorAccent));
+
         mSwipeRefreshLayout.setRefreshing(true);
         setupSharedPref();
-        if(isNetworkAvailable())
-            getLocation();
 
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
@@ -103,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
             @Override
             public void onRefresh() {
                 mSwipeRefreshLayout.setRefreshing(true);
-                getLocation();
+                myLocation.getLocation(MainActivity.this, mLocationResult, 0);
             }
         });
 
@@ -117,7 +139,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if(requestCode == MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION || requestCode == MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION){
-            getLocation();
+            myLocation.getLocation(MainActivity.this, mLocationResult,0);
+
         } else {
             Toast.makeText(this, R.string.permission_not_granted, Toast.LENGTH_SHORT).show();
         }
@@ -134,10 +157,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.accessAlarm:
-                Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-                i.putExtra(AlarmClock.EXTRA_MESSAGE, "New Alarm");
-                i.putExtra(AlarmClock.EXTRA_HOUR, 10);
-                i.putExtra(AlarmClock.EXTRA_MINUTES, 30);
+                Intent i = new Intent(AlarmClock.ACTION_SHOW_ALARMS);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
                 return true;
             case R.id.accessSettings:
@@ -152,45 +173,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mLocationManager != null) {
-            mLocationManager.removeUpdates(this);
-        }
         PreferenceManager.getDefaultSharedPreferences(this)
                 .unregisterOnSharedPreferenceChangeListener(this);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public void onLocationChanged(Location location) {
-        String place = null;
-        try {
-            List<Address> addresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-            place = addresses.get(0).getLocality();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        if(isNetworkAvailable() &&  place != null)
-            getWeatherRoot(location.getLatitude(), location.getLongitude(), place, mSharedPreferences.getBoolean(getString(R.string.on_celsius), true));
-    }
-
-    @Override
-    public void onStatusChanged(String s, int i, Bundle bundle) {
-        Log.e(TAG, "onStatusChanged");
-    }
-
-    @Override
-    public void onProviderEnabled(String s) {
-        Log.e(TAG, "onProviderEnabled");
-    }
-
-    @Override
-    public void onProviderDisabled(String s) {
-        Log.e(TAG, "onProviderDisabled");
     }
 
     @Override
@@ -202,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
             } else {
                 sharedPreferences.edit().putBoolean(getString(R.string.on_celsius), true).apply();
             }
-            getLocation();
+            myLocation.getLocation(MainActivity.this, mLocationResult, 0);
         }
     }
 
@@ -261,39 +245,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
             isAvailable = true;
         }
         return isAvailable;
-    }
-
-    private void initializeLocationManager() {
-        Log.e(TAG, "initializeLocationManager");
-        if (mLocationManager == null) {
-            mLocationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
-        }
-    }
-
-    private void getLocation() {
-        Log.e(TAG, "onStartCommand");
-        mGeocoder = new Geocoder(this, Locale.getDefault());
-
-        Log.e(TAG, "onCreate");
-        initializeLocationManager();
-        try {
-            mLocationManager.requestLocationUpdates(
-                    LocationManager.NETWORK_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
-                    this);
-        } catch (SecurityException ex) {
-            Log.i(TAG, "fail to request location update, ignore", ex);
-        } catch (IllegalArgumentException ex) {
-            Log.d(TAG, "network provider does not exist, " + ex.getMessage());
-        }
-        try {
-            mLocationManager.requestLocationUpdates(
-                    LocationManager.GPS_PROVIDER, LOCATION_INTERVAL, LOCATION_DISTANCE,
-                    this);
-        } catch (SecurityException ex) {
-            Log.i(TAG, "fail to request location update, ignore", ex);
-        } catch (IllegalArgumentException ex) {
-            Log.d(TAG, "gps provider does not exist " + ex.getMessage());
-        }
     }
 
 }

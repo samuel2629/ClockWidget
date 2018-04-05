@@ -337,7 +337,7 @@ public class Datum_ implements Parcelable
     }
 
     public int getTemperatureCelsius(){
-        double temp = (getTemperature() * 5)/41;
+        double temp = (getTemperature() - 32)/1.8;
         return (int) Math.round(temp);
     }
 
