@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:initialKeyguardLayout="@layout/app_wid"
-                    android:initialLayout="@layout/app_wid"
+                    android:initialKeyguardLayout="@layout/widget_4_2"
+                    android:initialLayout="@layout/widget_4_2"
                     android:minHeight="110dp"
-                    android:minWidth="250dp"
+                    android:minWidth="180dp"
                     android:previewImage="@drawable/meteo_1"
                     android:resizeMode="horizontal|vertical"
                     android:updatePeriodMillis="0"

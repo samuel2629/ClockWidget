@@ -164,13 +164,13 @@ public class Currently implements Parcelable
         int iconId = R.mipmap.ic_weather_sunny_white_48dp;
 
         if (iconString.equals("clear-day")) {
-            iconId = R.mipmap.ic_weather_sunny_white_48dp;
+            iconId = R.drawable.icon_3;
         }
         else if (iconString.equals("clear-night")) {
-            iconId = R.mipmap.ic_weather_night_white_48dp;
+            iconId = R.drawable.icon_1;
         }
         else if (iconString.equals("rain")) {
-            iconId = R.mipmap.ic_weather_rainy_white_48dp;
+            iconId = R.drawable.icon_5;
         }
         else if (iconString.equals("snow")) {
             iconId = R.mipmap.ic_weather_snowy_white_48dp;
@@ -185,10 +185,10 @@ public class Currently implements Parcelable
             iconId = R.mipmap.ic_weather_fog_white_48dp;
         }
         else if (iconString.equals("cloudy")) {
-            iconId = R.mipmap.ic_weather_cloudy_white_48dp;
+            iconId = R.drawable.icon_4;
         }
         else if (iconString.equals("partly-cloudy-day")) {
-            iconId = R.mipmap.ic_weather_partlycloudy_white_48dp;
+            iconId = R.drawable.icon_6;
         }
         else if (iconString.equals("partly-cloudy-night")) {
             iconId = R.mipmap.ic_weather_cloudy_white_48dp;

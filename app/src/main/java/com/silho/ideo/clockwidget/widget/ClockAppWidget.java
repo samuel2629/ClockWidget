@@ -1,6 +1,7 @@
 package com.silho.ideo.clockwidget.widget;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.appwidget.AppWidgetManager;
@@ -18,16 +19,18 @@ import android.graphics.Typeface;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.provider.AlarmClock;
 import android.support.annotation.Nullable;
-import android.util.Log;
+import android.text.Layout;
+import android.text.StaticLayout;
+import android.text.TextPaint;
+import android.text.TextUtils;
 
 import android.widget.RemoteViews;
 import android.widget.TextView;
@@ -89,22 +92,22 @@ public class ClockAppWidget extends AppWidgetProvider {
 
                     Geocoder geocoder = new Geocoder(ClockUpdateService.this, Locale.getDefault());
                     List<Address> addresses = null;
-                    String place = "";
                     try {
                         addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    place = addresses.get(0).getLocality();
+                    mPlace = addresses.get(0).getLocality();
+                    updateTime(getApplicationContext());
 
-                    if(isNetworkAvailable() &&  place != null)
-                        getWeatherRoot(location.getLatitude(), location.getLongitude(), place,
+                    if(isNetworkAvailable() &&  mPlace != null)
+                        getWeatherRoot(location.getLatitude(), location.getLongitude(), mPlace,
                                 PreferenceManager.getDefaultSharedPreferences(getApplicationContext())
                                         .getBoolean(getString(R.string.on_celsius), true));
                 }
             };
 
-            myLocation.getLocation(this, mLocationResult, 1800000);
+            myLocation.getLocation(this, mLocationResult, 0);
             super.onCreate();
             mIntentFilter = new IntentFilter();
             mIntentFilter.addAction(Intent.ACTION_TIME_TICK);
@@ -163,8 +166,8 @@ public class ClockAppWidget extends AppWidgetProvider {
         }
     }
 
-    private static RemoteViews updateViews(Context context, AppWidgetManager appWidgetManager, int appWidgetId){
-        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.app_wid);
+    private static RemoteViews getLayout4_2(Context context, AppWidgetManager appWidgetManager, int appWidgetId){
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.widget_4_2);
 
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
         SimpleDateFormat formatterTime = new SimpleDateFormat("HH:mm");
@@ -172,15 +175,15 @@ public class ClockAppWidget extends AppWidgetProvider {
         String time = formatterTime.format(timeInMillis);
         String date = formatterDate.format(timeInMillis);
 
-        remoteViews.setImageViewBitmap(R.id.appwidgetTimeTv, buildUpdate(time, context,
-                400, 130, "hvBold", 200, 130, 125));
-        remoteViews.setImageViewBitmap(R.id.appwidgetDateTv, buildUpdate(date, context,
-                400, 80, "hvItalic", 210, 60, 50));
+        remoteViews.setImageViewBitmap(R.id.appwidgetTimeTv, createBitmap(context, time, 250, "hvBold"));
+        remoteViews.setImageViewBitmap(R.id.appwidgetDateTv, createBitmap(context, date, 60, "hvItalic"));
 
-        if(mWeatherSum != null && mIcon != -1) {
-            String weatherAndPlace = mWeatherSum + '\n' + mPlace;
-            remoteViews.setImageViewBitmap(R.id.appWidgetWeatherText, buildUpdate(mWeatherSum, context,
-                    200, 120, "hvBold", 110, 35, 50));
+        if (mWeatherSum != null && mIcon != -1) {
+
+            remoteViews.setImageViewBitmap(R.id.appwidgetPlaceTv, createBitmap(context, mPlace, 60, "hvBold"));
+            remoteViews.setImageViewBitmap(R.id.appWidgetWeatherText, createBitmap(context, mWeatherSum, 125, "hvBold"));
+            remoteViews.setImageViewResource(R.id.appWidgetIconIv, mIcon);
+
         }
 
         Intent intent = new Intent(context, MainActivity.class);
@@ -199,11 +202,60 @@ public class ClockAppWidget extends AppWidgetProvider {
 
     }
 
-    public static Bitmap buildUpdate(String time, Context context, int widthBitmap, int heightBitmap,
-                                     String font, int xText, int yText, int textSize) {
+    private static RemoteViews getLayout3_2(Context context, AppWidgetManager appWidgetManager, int appWidgetId){
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.widget_3_2);
+
+        long timeInMillis = Calendar.getInstance().getTimeInMillis();
+        SimpleDateFormat formatterTime = new SimpleDateFormat("HH:mm");
+        SimpleDateFormat formatterDate = new SimpleDateFormat("EEEE dd MMMM ");
+        String time = formatterTime.format(timeInMillis);
+        String date = formatterDate.format(timeInMillis);
+
+        remoteViews.setImageViewBitmap(R.id.appwidgetTimeTv, createBitmap(context, time, 250, "hvBold"));
+        remoteViews.setImageViewBitmap(R.id.appwidgetDateTv, createBitmap(context, date, 60, "hvItalic"));
+
+        if (mWeatherSum != null && mIcon != -1) {
+
+            remoteViews.setImageViewBitmap(R.id.appWidgetWeatherText, createBitmap(context, mWeatherSum, 125, "hvBold"));
+            remoteViews.setImageViewResource(R.id.appWidgetIconIv, mIcon);
+
+        }
+
+        Intent intent = new Intent(context, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0 , intent,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setOnClickPendingIntent(R.id.iconIv, pendingIntent);
+
+        Intent intent1 = new Intent(AlarmClock.ACTION_SHOW_ALARMS);
+        PendingIntent pendingIntent1 = PendingIntent.getActivity(context, 0, intent1,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setOnClickPendingIntent(R.id.dateAndTimeContainer, pendingIntent1);
+
+        appWidgetManager.updateAppWidget(appWidgetId, remoteViews);
+
+        return remoteViews;
+    }
+
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+    static void updateAppWidget(Context context, AppWidgetManager appWidgetManager, int appWidgetId) {
+        Bundle options = appWidgetManager.getAppWidgetOptions(appWidgetId);
+        int width = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH);
+        RemoteViews rv;
+        if (width < 300) {
+            rv = getLayout3_2(context, appWidgetManager, appWidgetId);
+        } else {
+            rv = getLayout4_2(context, appWidgetManager, appWidgetId);
+        }
+        appWidgetManager.updateAppWidget(appWidgetId, rv);
+    }
+
+
+    public static Bitmap buildUpdate(String text, Context context, int widthBitmap, int heightBitmap,
+                                     String font, int xText, int yText, int textSize, boolean isTooLong) {
         Bitmap myBitmap = Bitmap.createBitmap(widthBitmap, heightBitmap, Bitmap.Config.ARGB_8888);
+
         Canvas myCanvas = new Canvas(myBitmap);
-        Paint paint = new Paint();
+        TextPaint paint = new TextPaint();
         Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/"+ font +".ttf");
         paint.setAntiAlias(true);
         paint.setSubpixelText(true);
@@ -212,22 +264,62 @@ public class ClockAppWidget extends AppWidgetProvider {
         paint.setColor(Color.WHITE);
         paint.setTextSize(textSize);
         paint.setTextAlign(Paint.Align.CENTER);
-        myCanvas.drawText(time, xText, yText, paint);
+
+        if(isTooLong){
+            text = (String) TextUtils.ellipsize(text, paint, myBitmap.getWidth() - 10, TextUtils.TruncateAt.END);
+        }
+
+        myCanvas.drawText(text, xText, yText, paint);
         return myBitmap;
     }
 
+    private static Bitmap createBitmap(Context context, String text, int textSize, String font){
+
+        Typeface clock = Typeface.createFromAsset(context.getAssets(),"fonts/"+ font +".ttf");
+
+        TextPaint textPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG | Paint.LINEAR_TEXT_FLAG);
+        textPaint.setStyle(Paint.Style.FILL);
+        textPaint.setColor(Color.WHITE);
+        textPaint.setTextSize(textSize);
+        textPaint.setTypeface(clock);
+        int width = (int) textPaint.measureText(text);
+
+        StaticLayout mTextLayout = new StaticLayout(text, textPaint, width, Layout.Alignment.ALIGN_CENTER, 1.0f, 0.0f, false);
+
+        Bitmap b = Bitmap.createBitmap(width, mTextLayout.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas c = new Canvas(b);
+
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.LINEAR_TEXT_FLAG);
+        paint.setStyle(Paint.Style.FILL);
+        paint.setColor(Color.TRANSPARENT);
+
+        c.drawPaint(paint);
+        c.save();
+        c.translate(0, 0);
+        mTextLayout.draw(c);
+        c.restore();
+
+        return b;
+    }
+
     private static void updateTime(Context context){
-        RemoteViews remoteViews = updateViews(context, AppWidgetManager.getInstance(context), 0);
+        RemoteViews remoteViews = getLayout4_2(context, AppWidgetManager.getInstance(context), 0);
         ComponentName clockWidget = new ComponentName(context, ClockAppWidget.class);
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
         appWidgetManager.updateAppWidget(clockWidget, remoteViews);
     }
 
     @Override
+    public void onAppWidgetOptionsChanged(Context context, AppWidgetManager appWidgetManager, int appWidgetId, Bundle newOptions) {
+        updateAppWidget(context, appWidgetManager, appWidgetId);
+        super.onAppWidgetOptionsChanged(context, appWidgetManager, appWidgetId, newOptions);
+    }
+
+    @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         super.onUpdate(context, appWidgetManager, appWidgetIds);
         for(int appWidgetId: appWidgetIds) {
-            updateViews(context, appWidgetManager, appWidgetId);
+            getLayout4_2(context, appWidgetManager, appWidgetId);
             Intent intent = new Intent(ClockUpdateService.ACTION_UPDATE);
             intent.setPackage(PACKAGE_NAME);
         }

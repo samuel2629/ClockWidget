@@ -10,8 +10,6 @@ import android.graphics.Color;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -25,13 +23,10 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,6 +40,7 @@ import com.silho.ideo.clockwidget.settings.SettingsActivity;
 import com.silho.ideo.clockwidget.utils.MyLocation;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -96,11 +92,9 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                 place = addresses.get(0).getLocality();
 
                 if(isNetworkAvailable() &&  place != null)
-                    getWeatherRoot(location.getLatitude(), location.getLongitude(), place, mSharedPreferences.getBoolean(getString(R.string.on_celsius), true));
+                    getWeather(location.getLatitude(), location.getLongitude(), place, mSharedPreferences.getBoolean(getString(R.string.on_celsius), true));
             }
         };
-
-        myLocation.getLocation(this, mLocationResult, 0);
 
         getWindow().setStatusBarColor(getColor(R.color.colorAccent));
 
@@ -118,6 +112,8 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                     MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
                     MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION);
+        } else {
+            myLocation.getLocation(this, mLocationResult, 0);
         }
 
         mSwipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.colorAccent));
@@ -129,6 +125,23 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
             }
         });
 
+    }
+
+    public String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open("city.list.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+            int f = json.length();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
     }
 
     private void setupSharedPref(){
@@ -190,32 +203,49 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         }
     }
 
-    private void getWeatherRoot(double latitude, double longitude, final String place, final boolean isCelsius){
-        WeatherService.getRootWeather().weatherRoot(latitude, longitude).enqueue(new Callback<Root>() {
-            @Override
-            public void onResponse(Call<Root> call, Response<Root> response) {
-                mSwipeRefreshLayout.setRefreshing(false);
-                mHours = response.body().getHourly().getData();
-                mDays = response.body().getDaily().getData();
-                Currently currently = response.body().getCurrently();
-                if(isCelsius)
-                    mTempLabel.setText(String.format("%s°", String.valueOf((currently.getTemperatureCelsius()))));
-                else
-                    mTempLabel.setText(currently.getTemperature());
-                getHourlyFragment(isCelsius);
-                getDailyFragment(isCelsius);
-                mLocationLabel.setText(place);
-                mPrecipValue.setText(String.format("%s %%", String.valueOf(Math.round(currently.getPrecipProbability() * 100))));
-                mHumidityValue.setText(String.format("%s %%", String.valueOf(Math.round(currently.getHumidity() * 100))));
-                mIconTime.setImageResource(currently.getIconId(currently.getIcon()));
-            }
 
-            @Override
-            public void onFailure(Call<Root> call, Throwable t) {
-                t.getMessage();
-                Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
-            }
-        });
+//                mHours = response.body().getHourly().getData();
+//                mDays = response.body().getDaily().getData();
+//                getHourlyFragment(isCelsius);
+//                getDailyFragment(isCelsius);
+
+
+    private void getWeather(double latitude, double longitude, final String place, boolean isCelsius){
+        if(isCelsius) {
+            WeatherService.getCurrentWeather().weather(latitude, longitude, "metric").enqueue(new Callback<com.silho.ideo.clockwidget.model.openweathermap.Root>() {
+                @Override
+                public void onResponse(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Response<com.silho.ideo.clockwidget.model.openweathermap.Root> response) {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                    mLocationLabel.setText(place);
+                    mHumidityValue.setText(String.format("%s %%", String.valueOf(response.body().getMain().getHumidity())));
+                    mTempLabel.setText(String.format("%s°", String.valueOf(Math.round(response.body().getMain().getTemp()))));
+                    mPrecipValue.setText(String.format("%s m/s", String.valueOf(Math.round(response.body().getWind().getSpeed()))));
+                    mIconTime.setImageResource(response.body().getWeather().get(0).getIconId(response.body().getWeather().get(0).getIcon()));
+                }
+
+                @Override
+                public void onFailure(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Throwable t) {
+                    Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
+                }
+            });
+        } else {
+            WeatherService.getCurrentWeather().weather(latitude, longitude, "imperial").enqueue(new Callback<com.silho.ideo.clockwidget.model.openweathermap.Root>() {
+                @Override
+                public void onResponse(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Response<com.silho.ideo.clockwidget.model.openweathermap.Root> response) {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                    mLocationLabel.setText(place);
+                    mHumidityValue.setText(String.format("%s %%", String.valueOf(response.body().getMain().getHumidity())));
+                    mTempLabel.setText(String.format("%s°", String.valueOf(Math.round(response.body().getMain().getTemp()))));
+                    mPrecipValue.setText(String.format("%s m/s", String.valueOf(Math.round(response.body().getWind().getSpeed()))));
+                    mIconTime.setImageResource(response.body().getWeather().get(0).getIconId(response.body().getWeather().get(0).getIcon()));
+                }
+
+                @Override
+                public void onFailure(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Throwable t) {
+                    Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 
     private void getDailyFragment(boolean isCelsius) {
