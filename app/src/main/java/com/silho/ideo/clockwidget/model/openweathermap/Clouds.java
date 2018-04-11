@@ -7,8 +7,7 @@ import android.os.Parcelable.Creator;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Clouds implements Parcelable
-{
+public class Clouds implements Parcelable {
 
     @SerializedName("all")
     @Expose

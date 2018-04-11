@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.silho.ideo.clockwidget.R;
 import com.silho.ideo.clockwidget.adapter.DayAdapter;
-import com.silho.ideo.clockwidget.model.Datum__;
+import com.silho.ideo.clockwidget.model.openweathermap.ListDays;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ public class DailyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.daily_forecast_fragment, container, false);
-        ArrayList<Datum__> days = getArguments().getParcelableArrayList(getString(R.string.days_arraylist));
+        ArrayList<ListDays> days = getArguments().getParcelableArrayList(getString(R.string.days_arraylist));
         boolean isCelsius = getArguments().getBoolean(getString(R.string.on_celsius));
         DayAdapter dayAdapter = new DayAdapter(getContext(), days, isCelsius);
         RecyclerView recyclerView = view.findViewById(R.id.dailyRecyclerView);

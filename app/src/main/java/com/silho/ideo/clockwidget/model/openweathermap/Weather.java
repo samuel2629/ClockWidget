@@ -8,8 +8,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import com.silho.ideo.clockwidget.R;
 
-public class Weather implements Parcelable
-{
+public class Weather implements Parcelable {
 
     @SerializedName("id")
     @Expose
@@ -75,25 +74,34 @@ public class Weather implements Parcelable
 
     public int getIconId(String iconString){
         // clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night.
-        int iconId = R.mipmap.ic_weather_sunny_white_48dp;
+        int iconId = R.drawable.meteo_2;
 
-        if (iconString.equals("clear sky")) {
-            iconId = R.drawable.icon_3;
+        if (iconString.equals("01d")) {
+            iconId = R.drawable.meteo_2;
         }
-        else if (iconString.equals("rain")) {
-            iconId = R.drawable.icon_5;
+        else if(iconString.equals("01n")){
+            iconId = R.drawable.meteo_15;
         }
-        else if (iconString.equals("snow")) {
-            iconId = R.mipmap.ic_weather_snowy_white_48dp;
+        else if (iconString.equals("09d") || iconString.equals("09n") || iconString.equals("10d") || iconString.equals("10n")) {
+            iconId = R.drawable.meteo_6;
         }
-        else if (iconString.equals("mist")) {
-            iconId = R.mipmap.ic_weather_windy_variant_white_48dp;
+        else if (iconString.equals("13d") || iconString.equals("13n")) {
+            iconId = R.drawable.meteo_22;
         }
-        else if (iconString.equals("scattered clouds")) {
-            iconId = R.drawable.icon_4;
+        else if (iconString.equals("03d") || iconString.equals("04d") ) {
+            iconId = R.drawable.meteo_5;
         }
-        else if (iconString.equals("few clouds")) {
-            iconId = R.drawable.icon_6;
+        else if (iconString.equals("02d")) {
+            iconId = R.drawable.meteo_4;
+        }
+        else if(iconString.equals("02n") || iconString.equals("03n") || iconString.equals("04n")){
+            iconId = R.drawable.meteo_3;
+        }
+        else if(iconString.equals("11d") || iconString.equals("11n"))
+            iconId = R.drawable.meteo_7;
+
+        else if(iconString.equals("50d") || iconString.equals("50n")){
+            iconId = R.drawable.meteo_10;
         }
 
         return iconId;

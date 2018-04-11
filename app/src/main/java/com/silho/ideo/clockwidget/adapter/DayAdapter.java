@@ -9,9 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.silho.ideo.clockwidget.R;
-import com.silho.ideo.clockwidget.model.Datum__;
+import com.silho.ideo.clockwidget.model.openweathermap.ListDays;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Samuel on 29/03/2018.
@@ -21,13 +21,14 @@ public class DayAdapter extends RecyclerView.Adapter<DayAdapter.ViewHolder> {
 
     private final boolean mIsCelsius;
     private Context mContext;
-    private ArrayList<Datum__> mDays;
+    private List<ListDays> mDays;
 
-    public DayAdapter(Context context, ArrayList<Datum__> days, boolean isCelsius){
+    public DayAdapter(Context context, List<ListDays> days, boolean isCelsius){
         mContext = context;
-        mDays = days;
+        mDays =  days.subList(0, 10);
         mIsCelsius = isCelsius;
     }
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -59,15 +60,17 @@ public class DayAdapter extends RecyclerView.Adapter<DayAdapter.ViewHolder> {
             iconIv = itemView.findViewById(R.id.iconIv);
         }
 
-        public void bindDay(Datum__ daily) {
+        public void bindDay(ListDays daily) {
             if(mIsCelsius)
-                tempTv.setText(String.format("%s°", String.valueOf(daily.getMinTempCelsius())
-                        + "/" + String.valueOf(daily.getMaxTempCelsius())));
+                tempTv.setText(String.format("%s°", String.valueOf(Math.round(daily.getTemp().getMin()))
+                        + "/" + String.valueOf(Math.round(daily.getTemp().getMax()))));
             else
-                tempTv.setText(String.format("%s°", String.valueOf(Math.round(daily.getTemperatureMin()))
-                    + "/" + String.valueOf(Math.round(daily.getTemperatureMax()))));
+                tempTv.setText(String.format("%s°", String.valueOf(Math.round(daily.getTemp().getMin()))
+                    + "/" + String.valueOf(Math.round(daily.getTemp().getMax()))));
             dayTv.setText(daily.getDayOfTheWeek());
-            iconIv.setImageResource(daily.getIconId(daily.getIcon()));
+            for(int i = 0; i < daily.getWeather().size(); i++) {
+                iconIv.setImageResource(daily.getWeather().get(i).getIconId(daily.getWeather().get(i).getIcon()));
+            }
         }
     }
 }

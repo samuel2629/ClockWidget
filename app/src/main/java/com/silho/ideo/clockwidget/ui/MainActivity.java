@@ -31,10 +31,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.silho.ideo.clockwidget.R;
-import com.silho.ideo.clockwidget.model.Currently;
-import com.silho.ideo.clockwidget.model.Datum_;
-import com.silho.ideo.clockwidget.model.Datum__;
-import com.silho.ideo.clockwidget.model.Root;
+import com.silho.ideo.clockwidget.model.openweathermap.ListDays;
+import com.silho.ideo.clockwidget.model.openweathermap.ListHours;
+import com.silho.ideo.clockwidget.model.openweathermap.RootDays;
+import com.silho.ideo.clockwidget.model.openweathermap.RootHours;
 import com.silho.ideo.clockwidget.retofitApi.WeatherService;
 import com.silho.ideo.clockwidget.settings.SettingsActivity;
 import com.silho.ideo.clockwidget.utils.MyLocation;
@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     public static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 6;
     public static final int MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION = 7;
-    private List<Datum_> mHours;
-    private List<Datum__> mDays;
     private SharedPreferences mSharedPreferences;
 
     @BindView(R.id.temperatureLabel) TextView mTempLabel;
@@ -89,10 +87,13 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                place = addresses.get(0).getLocality();
+                if(addresses != null)
+                    place = addresses.get(0).getLocality();
 
                 if(isNetworkAvailable() &&  place != null)
-                    getWeather(location.getLatitude(), location.getLongitude(), place, mSharedPreferences.getBoolean(getString(R.string.on_celsius), true));
+                    getCurrentWeather(location.getLatitude(), location.getLongitude(), place, mSharedPreferences.getBoolean(getString(R.string.on_celsius), true));
+                    getHourlyWeather(location.getLatitude(), location.getLongitude(), mSharedPreferences.getBoolean(getString(R.string.on_celsius), true));
+                    //getDailyWeather(location.getLatitude(), location.getLongitude(), mSharedPreferences.getBoolean(getString(R.string.on_celsius), true));
             }
         };
 
@@ -203,16 +204,9 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         }
     }
 
-
-//                mHours = response.body().getHourly().getData();
-//                mDays = response.body().getDaily().getData();
-//                getHourlyFragment(isCelsius);
-//                getDailyFragment(isCelsius);
-
-
-    private void getWeather(double latitude, double longitude, final String place, boolean isCelsius){
+    private void getCurrentWeather(double latitude, double longitude, final String place, boolean isCelsius){
         if(isCelsius) {
-            WeatherService.getCurrentWeather().weather(latitude, longitude, "metric").enqueue(new Callback<com.silho.ideo.clockwidget.model.openweathermap.Root>() {
+            WeatherService.getWeather().weather(latitude, longitude, "metric").enqueue(new Callback<com.silho.ideo.clockwidget.model.openweathermap.Root>() {
                 @Override
                 public void onResponse(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Response<com.silho.ideo.clockwidget.model.openweathermap.Root> response) {
                     mSwipeRefreshLayout.setRefreshing(false);
@@ -229,7 +223,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                 }
             });
         } else {
-            WeatherService.getCurrentWeather().weather(latitude, longitude, "imperial").enqueue(new Callback<com.silho.ideo.clockwidget.model.openweathermap.Root>() {
+            WeatherService.getWeather().weather(latitude, longitude, "imperial").enqueue(new Callback<com.silho.ideo.clockwidget.model.openweathermap.Root>() {
                 @Override
                 public void onResponse(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Response<com.silho.ideo.clockwidget.model.openweathermap.Root> response) {
                     mSwipeRefreshLayout.setRefreshing(false);
@@ -248,19 +242,50 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         }
     }
 
-    private void getDailyFragment(boolean isCelsius) {
+    private void getHourlyWeather(double latitude, double longitude, final boolean isCelsius){
+        WeatherService.getWeather().weatherHours(latitude, longitude, "metric").enqueue(new Callback<RootHours>() {
+            @Override
+            public void onResponse(Call<RootHours> call, Response<RootHours> response) {
+                List<ListHours> mHours = response.body().getList();
+                getHourlyFragment(isCelsius, mHours);
+            }
+
+            @Override
+            public void onFailure(Call<RootHours> call, Throwable t) {
+                t.getMessage();
+            }
+        });
+    }
+
+    private void getDailyWeather(double latitude, double longitude, final boolean isCelsius){
+        WeatherService.getWeather().weatherDays(latitude, longitude, "metric").enqueue(new Callback<RootDays>() {
+            @Override
+            public void onResponse(Call<RootDays> call, Response<RootDays> response) {
+                response.body();
+                List<ListDays> days = response.body().getList();
+                getDailyFragment(isCelsius, days);
+            }
+
+            @Override
+            public void onFailure(Call<RootDays> call, Throwable t) {
+
+            }
+        });
+    }
+
+    private void getDailyFragment(boolean isCelsius, List<ListDays> days) {
         DailyFragment dailyFragment = new DailyFragment();
         Bundle bundle = new Bundle();
-        bundle.putParcelableArrayList(getResources().getString(R.string.days_arraylist), (ArrayList<? extends Parcelable>) mDays);
+        bundle.putParcelableArrayList(getResources().getString(R.string.days_arraylist), (ArrayList<? extends Parcelable>) days);
         bundle.putBoolean(getString(R.string.on_celsius), isCelsius);
         dailyFragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().add(R.id.dailyContainer, dailyFragment).commitAllowingStateLoss();
     }
 
-    private void getHourlyFragment(boolean isCelsius) {
+    private void getHourlyFragment(boolean isCelsius, List<ListHours> hours) {
         HourlyFragment hourlyFragment = new HourlyFragment();
         Bundle bundle = new Bundle();
-        bundle.putParcelableArrayList(getResources().getString(R.string.hours_arraylist), (ArrayList<? extends Parcelable>) mHours);
+        bundle.putParcelableArrayList(getResources().getString(R.string.hours_arraylist), (ArrayList<? extends Parcelable>) hours);
         bundle.putBoolean(getString(R.string.on_celsius), isCelsius);
         hourlyFragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().add(R.id.hourlyContainer, hourlyFragment).commitAllowingStateLoss();

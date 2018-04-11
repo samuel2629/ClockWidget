@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:initialKeyguardLayout="@layout/widget_4_2"
-                    android:initialLayout="@layout/widget_4_2"
-                    android:minHeight="110dp"
-                    android:minWidth="180dp"
-                    android:previewImage="@drawable/meteo_1"
+                    android:initialKeyguardLayout="@layout/test_app_widget"
+                    android:initialLayout="@layout/test_app_widget"
+                    android:minHeight="40dp"
+                    android:minWidth="250dp"
+                    android:previewImage="@drawable/meteo_exemple"
                     android:resizeMode="horizontal|vertical"
                     android:updatePeriodMillis="0"
                     android:widgetCategory="home_screen">

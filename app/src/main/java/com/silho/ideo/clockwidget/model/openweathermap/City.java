@@ -1,9 +1,8 @@
-
-package com.silho.ideo.clockwidget.model;
+package com.silho.ideo.clockwidget.model.openweathermap;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
+import android.os.Parcelable.Creator;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -16,12 +15,12 @@ public class City implements Parcelable
     @SerializedName("name")
     @Expose
     private String name;
-    @SerializedName("country")
-    @Expose
-    private String country;
     @SerializedName("coord")
     @Expose
     private Coord coord;
+    @SerializedName("country")
+    @Expose
+    private String country;
     public final static Parcelable.Creator<City> CREATOR = new Creator<City>() {
 
 
@@ -42,8 +41,8 @@ public class City implements Parcelable
     protected City(Parcel in) {
         this.id = ((Integer) in.readValue((Integer.class.getClassLoader())));
         this.name = ((String) in.readValue((String.class.getClassLoader())));
-        this.country = ((String) in.readValue((String.class.getClassLoader())));
         this.coord = ((Coord) in.readValue((Coord.class.getClassLoader())));
+        this.country = ((String) in.readValue((String.class.getClassLoader())));
     }
 
     /**
@@ -60,12 +59,12 @@ public class City implements Parcelable
      * @param name
      * @param country
      */
-    public City(Integer id, String name, String country, Coord coord) {
+    public City(Integer id, String name, Coord coord, String country) {
         super();
         this.id = id;
         this.name = name;
-        this.country = country;
         this.coord = coord;
+        this.country = country;
     }
 
     public Integer getId() {
@@ -84,14 +83,6 @@ public class City implements Parcelable
         this.name = name;
     }
 
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
     public Coord getCoord() {
         return coord;
     }
@@ -100,11 +91,19 @@ public class City implements Parcelable
         this.coord = coord;
     }
 
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeValue(id);
         dest.writeValue(name);
-        dest.writeValue(country);
         dest.writeValue(coord);
+        dest.writeValue(country);
     }
 
     public int describeContents() {

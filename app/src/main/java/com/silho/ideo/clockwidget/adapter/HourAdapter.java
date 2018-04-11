@@ -9,13 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.silho.ideo.clockwidget.R;
-import com.silho.ideo.clockwidget.model.Datum_;
-import com.silho.ideo.clockwidget.model.Hourly;
+import com.silho.ideo.clockwidget.model.openweathermap.ListHours;
 
 import java.math.BigInteger;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
+import java.util.List;
 
 /**
  * Created by Samuel on 29/03/2018.
@@ -23,13 +21,13 @@ import java.util.Calendar;
 
 public class HourAdapter extends RecyclerView.Adapter<HourAdapter.ViewHolder> {
 
-    private final ArrayList<Datum_> mHours;
+    private final List<ListHours> mHours;
     private final boolean mIsCelsius;
     private Context mContext;
 
-    public HourAdapter(Context context, ArrayList<Datum_> hours, boolean isCelsius){
+    public HourAdapter(Context context, List<ListHours> hours, boolean isCelsius){
         mContext = context;
-        mHours = hours;
+        mHours = hours.subList(0,9);
         mIsCelsius = isCelsius;
     }
 
@@ -66,18 +64,20 @@ public class HourAdapter extends RecyclerView.Adapter<HourAdapter.ViewHolder> {
 
         }
 
-        public void bindHour(Datum_ hourly) {
-            BigInteger bigInteger = new BigInteger(String.valueOf(hourly.getTime()));
+        public void bindHour(ListHours hourly) {
+            BigInteger bigInteger = new BigInteger(String.valueOf(hourly.getDt()));
             bigInteger = bigInteger.multiply(new BigInteger("1000"));
             SimpleDateFormat formatterTime = new SimpleDateFormat("HH:mm");
             String date = formatterTime.format(bigInteger);
             timeTv.setText(date);
             if(mIsCelsius)
-                tempTv.setText(String.format("%s°", String.valueOf(hourly.getTemperatureCelsius())));
+                tempTv.setText(String.format("%s°", String.valueOf(Math.round(hourly.getMain().getTemp()))));
             else
-                tempTv.setText(String.format("%s°", String.valueOf(Math.round(hourly.getTemperature()))));
+                tempTv.setText(String.format("%s°", String.valueOf(Math.round(hourly.getMain().getTemp()))));
             sumTv.setVisibility(View.GONE);
-            iconIv.setImageResource(hourly.getIconId(hourly.getIcon()));
+            for(int i = 0; i < hourly.getWeather().size(); i++) {
+                iconIv.setImageResource(hourly.getWeather().get(i).getIconId(hourly.getWeather().get(i).getIcon()));
+            }
         }
     }
 }

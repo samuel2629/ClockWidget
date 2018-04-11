@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.silho.ideo.clockwidget.R;
 import com.silho.ideo.clockwidget.adapter.HourAdapter;
-import com.silho.ideo.clockwidget.model.Datum_;
+import com.silho.ideo.clockwidget.model.openweathermap.ListHours;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ public class HourlyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.hourly_forecast_fragment, container, false);
-        ArrayList<Datum_> hours = getArguments().getParcelableArrayList(getString(R.string.hours_arraylist));
+        ArrayList<ListHours> hours = getArguments().getParcelableArrayList(getString(R.string.hours_arraylist));
         boolean isCelsius = getArguments().getBoolean(getString(R.string.on_celsius));
         HourAdapter hourAdapter = new HourAdapter(getContext(), hours, isCelsius);
         RecyclerView recyclerView = view.findViewById(R.id.hourlyRecyclerView);
