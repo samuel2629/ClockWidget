@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.silho.ideo.clockwidget.R;
-import com.silho.ideo.clockwidget.model.openweathermap.ListHours;
+import com.silho.ideo.clockwidget.model.ListHours;
 
 import java.math.BigInteger;
 import java.text.SimpleDateFormat;

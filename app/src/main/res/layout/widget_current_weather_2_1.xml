@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:id="@+id/weatherContainer"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/appWidgetIconIv"
+                android:layout_gravity="center"
+                android:src="@drawable/meteo_2"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2.25"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/appWidgetWeatherText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dateAndTimeContainer"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginEnd="4dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/appwidgetTimeTv"
+                android:paddingEnd="4dp"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:paddingEnd="4dp"
+                android:id="@+id/appwidgetDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_2"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

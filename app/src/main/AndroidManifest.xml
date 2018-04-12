@@ -29,6 +29,7 @@
         <receiver android:name=".widget.ClockAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.silho.ideo.clockwidget.widget.data_fetched"/>
             </intent-filter>
 
             <meta-data
@@ -43,6 +44,9 @@
                 <action android:name="com.silho.clockwidget.action.UPDATE"/>
             </intent-filter>
         </service>
+        <service android:name=".widget.ClockAppWidgetService"
+                 android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:name=".widget.RemoteFetchService"/>
 
 
         <activity

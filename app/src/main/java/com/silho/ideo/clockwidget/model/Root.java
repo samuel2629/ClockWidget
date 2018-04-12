@@ -1,10 +1,10 @@
 
-package com.silho.ideo.clockwidget.model.openweathermap;
+package com.silho.ideo.clockwidget.model;
 
 import java.util.List;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.os.Parcelable.Creator;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -63,7 +63,7 @@ public class Root implements Parcelable
 
     protected Root(Parcel in) {
         this.coord = ((Coord) in.readValue((Coord.class.getClassLoader())));
-        in.readList(this.weather, (com.silho.ideo.clockwidget.model.openweathermap.Weather.class.getClassLoader()));
+        in.readList(this.weather, (Weather.class.getClassLoader()));
         this.base = ((String) in.readValue((String.class.getClassLoader())));
         this.main = ((Main) in.readValue((Main.class.getClassLoader())));
         this.wind = ((Wind) in.readValue((Wind.class.getClassLoader())));

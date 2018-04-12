@@ -1,9 +1,9 @@
 
-package com.silho.ideo.clockwidget.model.openweathermap;
+package com.silho.ideo.clockwidget.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.os.Parcelable.Creator;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

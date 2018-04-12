@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.silho.ideo.clockwidget.R;
 import com.silho.ideo.clockwidget.adapter.DayAdapter;
-import com.silho.ideo.clockwidget.model.openweathermap.ListDays;
+import com.silho.ideo.clockwidget.model.ListDays;
 
 import java.util.ArrayList;
 

@@ -31,10 +31,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.silho.ideo.clockwidget.R;
-import com.silho.ideo.clockwidget.model.openweathermap.ListDays;
-import com.silho.ideo.clockwidget.model.openweathermap.ListHours;
-import com.silho.ideo.clockwidget.model.openweathermap.RootDays;
-import com.silho.ideo.clockwidget.model.openweathermap.RootHours;
+import com.silho.ideo.clockwidget.model.ListDays;
+import com.silho.ideo.clockwidget.model.ListHours;
+import com.silho.ideo.clockwidget.model.Root;
+import com.silho.ideo.clockwidget.model.RootDays;
+import com.silho.ideo.clockwidget.model.RootHours;
 import com.silho.ideo.clockwidget.retofitApi.WeatherService;
 import com.silho.ideo.clockwidget.settings.SettingsActivity;
 import com.silho.ideo.clockwidget.utils.MyLocation;
@@ -206,9 +207,9 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     private void getCurrentWeather(double latitude, double longitude, final String place, boolean isCelsius){
         if(isCelsius) {
-            WeatherService.getWeather().weather(latitude, longitude, "metric").enqueue(new Callback<com.silho.ideo.clockwidget.model.openweathermap.Root>() {
+            WeatherService.getWeather().weather(latitude, longitude, "metric").enqueue(new Callback<Root>() {
                 @Override
-                public void onResponse(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Response<com.silho.ideo.clockwidget.model.openweathermap.Root> response) {
+                public void onResponse(Call<Root> call, Response<Root> response) {
                     mSwipeRefreshLayout.setRefreshing(false);
                     mLocationLabel.setText(place);
                     mHumidityValue.setText(String.format("%s %%", String.valueOf(response.body().getMain().getHumidity())));
@@ -218,14 +219,14 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                 }
 
                 @Override
-                public void onFailure(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Throwable t) {
+                public void onFailure(Call<Root> call, Throwable t) {
                     Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
                 }
             });
         } else {
-            WeatherService.getWeather().weather(latitude, longitude, "imperial").enqueue(new Callback<com.silho.ideo.clockwidget.model.openweathermap.Root>() {
+            WeatherService.getWeather().weather(latitude, longitude, "imperial").enqueue(new Callback<Root>() {
                 @Override
-                public void onResponse(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Response<com.silho.ideo.clockwidget.model.openweathermap.Root> response) {
+                public void onResponse(Call<Root> call, Response<Root> response) {
                     mSwipeRefreshLayout.setRefreshing(false);
                     mLocationLabel.setText(place);
                     mHumidityValue.setText(String.format("%s %%", String.valueOf(response.body().getMain().getHumidity())));
@@ -235,7 +236,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                 }
 
                 @Override
-                public void onFailure(Call<com.silho.ideo.clockwidget.model.openweathermap.Root> call, Throwable t) {
+                public void onFailure(Call<Root> call, Throwable t) {
                     Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
                 }
             });

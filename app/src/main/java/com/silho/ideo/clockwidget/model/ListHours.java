@@ -1,13 +1,10 @@
-package com.silho.ideo.clockwidget.model.openweathermap;
+package com.silho.ideo.clockwidget.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class ListHours implements Parcelable {
 

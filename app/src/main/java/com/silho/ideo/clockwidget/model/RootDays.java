@@ -1,5 +1,5 @@
 
-package com.silho.ideo.clockwidget.model.openweathermap;
+package com.silho.ideo.clockwidget.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -1,12 +1,11 @@
 package com.silho.ideo.clockwidget.retofitApi;
 
-import com.silho.ideo.clockwidget.model.openweathermap.Root;
-import com.silho.ideo.clockwidget.model.openweathermap.RootDays;
-import com.silho.ideo.clockwidget.model.openweathermap.RootHours;
+import com.silho.ideo.clockwidget.model.Root;
+import com.silho.ideo.clockwidget.model.RootDays;
+import com.silho.ideo.clockwidget.model.RootHours;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**

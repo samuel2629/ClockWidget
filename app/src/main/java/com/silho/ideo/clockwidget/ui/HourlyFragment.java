@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.silho.ideo.clockwidget.R;
 import com.silho.ideo.clockwidget.adapter.HourAdapter;
-import com.silho.ideo.clockwidget.model.openweathermap.ListHours;
+import com.silho.ideo.clockwidget.model.ListHours;
 
 import java.util.ArrayList;
 
