@@ -71,6 +71,7 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/buttonToForecast"
                 android:adjustViewBounds="true"
                 android:layout_width="wrap_content"
                 android:src="@drawable/icon_2"

@@ -23,4 +23,22 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="ForecastLayoutTheme">
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="ForecastSeparatorTheme">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+
+    </style>
+
 </resources>

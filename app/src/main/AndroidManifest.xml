@@ -44,10 +44,6 @@
                 <action android:name="com.silho.clockwidget.action.UPDATE"/>
             </intent-filter>
         </service>
-        <service android:name=".widget.ClockAppWidgetService"
-                 android:permission="android.permission.BIND_REMOTEVIEWS"/>
-        <service android:name=".widget.RemoteFetchService"/>
-
 
         <activity
             android:name=".settings.SettingsActivity"
