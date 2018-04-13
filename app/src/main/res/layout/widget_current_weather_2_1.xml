@@ -64,17 +64,17 @@
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="bottom"
+            android:gravity="center"
             android:orientation="vertical"
+            android:id="@+id/buttonToForecast"
             android:layout_width="0dp"
             android:layout_weight="0.15"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/buttonToForecast"
                 android:adjustViewBounds="true"
                 android:layout_width="wrap_content"
-                android:src="@drawable/icon_2"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>

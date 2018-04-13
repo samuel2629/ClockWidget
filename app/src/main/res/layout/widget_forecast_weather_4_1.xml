@@ -181,13 +181,13 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.30"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom">
+                android:id="@+id/buttonToCurrent"
+                android:layout_gravity="center">
 
                 <ImageView
-                    android:id="@+id/buttonToCurrent"
                     android:adjustViewBounds="true"
                     android:layout_width="wrap_content"
-                    android:src="@drawable/icon_1"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>

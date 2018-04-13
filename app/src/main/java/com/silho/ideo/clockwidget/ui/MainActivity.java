@@ -244,34 +244,67 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     }
 
     private void getHourlyWeather(double latitude, double longitude, final boolean isCelsius){
-        WeatherService.getWeather().weatherHours(latitude, longitude, "metric").enqueue(new Callback<RootHours>() {
-            @Override
-            public void onResponse(Call<RootHours> call, Response<RootHours> response) {
-                List<ListHours> mHours = response.body().getList();
-                getHourlyFragment(isCelsius, mHours);
-            }
+        if(isCelsius) {
+            WeatherService.getWeather().weatherHours(latitude, longitude, "metric").enqueue(new Callback<RootHours>() {
+                @Override
+                public void onResponse(Call<RootHours> call, Response<RootHours> response) {
+                    List<ListHours> mHours = response.body().getList();
+                    getHourlyFragment(isCelsius, mHours);
+                }
 
-            @Override
-            public void onFailure(Call<RootHours> call, Throwable t) {
-                t.getMessage();
-            }
-        });
+                @Override
+                public void onFailure(Call<RootHours> call, Throwable t) {
+                    Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
+
+                }
+            });
+        } else {
+            WeatherService.getWeather().weatherHours(latitude, longitude, "imperial").enqueue(new Callback<RootHours>() {
+                @Override
+                public void onResponse(Call<RootHours> call, Response<RootHours> response) {
+                    List<ListHours> mHours = response.body().getList();
+                    getHourlyFragment(isCelsius, mHours);
+                }
+
+                @Override
+                public void onFailure(Call<RootHours> call, Throwable t) {
+                    Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
+
+                }
+            });
+        }
     }
 
-    private void getDailyWeather(double latitude, double longitude, final boolean isCelsius){
-        WeatherService.getWeather().weatherDays(latitude, longitude, "metric").enqueue(new Callback<RootDays>() {
-            @Override
-            public void onResponse(Call<RootDays> call, Response<RootDays> response) {
-                response.body();
-                List<ListDays> days = response.body().getList();
-                getDailyFragment(isCelsius, days);
-            }
+    private void getDailyWeather(double latitude, double longitude, final boolean isCelsius) {
+        if (isCelsius) {
+            WeatherService.getWeather().weatherDays(latitude, longitude, "metric").enqueue(new Callback<RootDays>() {
+                @Override
+                public void onResponse(Call<RootDays> call, Response<RootDays> response) {
+                    response.body();
+                    List<ListDays> days = response.body().getList();
+                    getDailyFragment(isCelsius, days);
+                }
 
-            @Override
-            public void onFailure(Call<RootDays> call, Throwable t) {
+                @Override
+                public void onFailure(Call<RootDays> call, Throwable t) {
+                    Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
+                }
+            });
+        } else {
+            WeatherService.getWeather().weatherDays(latitude, longitude, "imperial").enqueue(new Callback<RootDays>() {
+                @Override
+                public void onResponse(Call<RootDays> call, Response<RootDays> response) {
+                    response.body();
+                    List<ListDays> days = response.body().getList();
+                    getDailyFragment(isCelsius, days);
+                }
 
-            }
-        });
+                @Override
+                public void onFailure(Call<RootDays> call, Throwable t) {
+                    Toast.makeText(MainActivity.this, R.string.error_getting_weather, Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 
     private void getDailyFragment(boolean isCelsius, List<ListDays> days) {
