@@ -15,7 +15,7 @@ import static com.silho.ideo.clockwidget.widget.ClockUpdateService.updateAppWidg
 public class ClockAppWidgetReceiver extends BroadcastReceiver {
 
     public static String CLICKED = "com.silho.ideo.action.clicked";
-    private static boolean isClicked = false;
+    public static boolean isClicked = false;
 
     @Override
     public void onReceive(Context context, Intent intent) {

@@ -51,6 +51,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static com.silho.ideo.clockwidget.widget.ClockAppWidgetReceiver.CLICKED;
+import static com.silho.ideo.clockwidget.widget.ClockAppWidgetReceiver.isClicked;
 
 /**
  * Created by Samuel on 13/04/2018.
@@ -63,7 +64,6 @@ public class ClockUpdateService extends Service {
     private static String mWeatherTempMinMax;
     private static int mIcon;
     private static ArrayList<ListHours> mListDays;
-    private static boolean isClicked = false;
     private static boolean isSmall = false;
     private static boolean isMedium = false;
     private static boolean isBig = false;

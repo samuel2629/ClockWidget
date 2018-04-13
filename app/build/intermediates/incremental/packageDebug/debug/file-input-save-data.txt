@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Apr 13 17:12:56 CEST 2018
+#Fri Apr 13 17:29:56 CEST 2018
 17.baseType=DIRECTORY
 4.path=fonts/HelveticaNeue-MediumItalic-12.ttf
 8.set=ASSET
