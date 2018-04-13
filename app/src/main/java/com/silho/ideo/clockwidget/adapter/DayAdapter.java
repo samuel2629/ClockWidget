@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.silho.ideo.clockwidget.R;
 import com.silho.ideo.clockwidget.model.ListDays;
+import com.silho.ideo.clockwidget.utils.FontHelper;
 
 import java.util.List;
 
@@ -38,6 +39,7 @@ public class DayAdapter extends RecyclerView.Adapter<DayAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        FontHelper.setCustomTypeface(holder.itemView);
         holder.bindDay(mDays.get(position));
     }
 

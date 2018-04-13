@@ -24,7 +24,17 @@
             android:background="?attr/colorAccent"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:id="@+id/toolbar_title"/>
+
+        </android.support.v7.widget.Toolbar>
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
@@ -40,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:text="--"
+                android:text="@string/empty_value"
                 android:paddingBottom="16dp"
                 android:textColor="@android:color/white"
                 android:textSize="80sp"/>
@@ -52,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:text="--"
+                android:text="@string/empty_value"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"/>
 
@@ -85,14 +95,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="HUMIDITY"
+                        android:text="@string/humidity_label"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/humidityValue"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="--"
+                        android:text="@string/empty_value"
                         android:gravity="center_horizontal"
                         android:textColor="@android:color/white"
                         android:textSize="24sp"/>
@@ -109,12 +119,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="WIND SPEED"
+                        android:text="@string/wind_speed_label"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/precipValue"
-                        android:text="--"
+                        android:text="@string/empty_value"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"

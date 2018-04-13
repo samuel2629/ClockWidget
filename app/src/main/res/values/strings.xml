@@ -22,4 +22,7 @@
     <string name="title_toolbar">Weather</string>
     <string name="mood_curved">curvedMoon</string>
     <string name="icon_imageView">icon_imageView</string>
+    <string name="humidity_label">HUMIDITY</string>
+    <string name="empty_value">--</string>
+    <string name="wind_speed_label">WIND SPEED</string>
 </resources>

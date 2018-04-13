@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.silho.ideo.clockwidget.R;
 import com.silho.ideo.clockwidget.model.ListHours;
+import com.silho.ideo.clockwidget.utils.FontHelper;
 
 import java.math.BigInteger;
 import java.text.SimpleDateFormat;
@@ -39,6 +40,7 @@ public class HourAdapter extends RecyclerView.Adapter<HourAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        FontHelper.setCustomTypeface(holder.itemView);
         holder.bindHour(mHours.get(position));
     }
 

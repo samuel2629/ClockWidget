@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -38,6 +39,7 @@ import com.silho.ideo.clockwidget.model.RootDays;
 import com.silho.ideo.clockwidget.model.RootHours;
 import com.silho.ideo.clockwidget.retofitApi.WeatherService;
 import com.silho.ideo.clockwidget.settings.SettingsActivity;
+import com.silho.ideo.clockwidget.utils.FontHelper;
 import com.silho.ideo.clockwidget.utils.MyLocation;
 
 import java.io.IOException;
@@ -63,7 +65,10 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     @BindView(R.id.humidityValue) TextView mHumidityValue;
     @BindView(R.id.precipValue) TextView mPrecipValue;
     @BindView(R.id.iconTime) ImageView mIconTime;
+    @BindView(R.id.humidityLabel) TextView mHumidityLabel;
+    @BindView(R.id.precipLabel) TextView mWindSpeedLabel;
     @BindView(R.id.swipeRefresher) SwipeRefreshLayout mSwipeRefreshLayout;
+
     private MyLocation.LocationResult mLocationResult;
     private MyLocation myLocation;
 
@@ -74,6 +79,13 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        FontHelper.setCustomTypeface(mTempLabel);
+        FontHelper.setCustomTypeface(mLocationLabel);
+        FontHelper.setCustomTypeface(mHumidityValue);
+        FontHelper.setCustomTypeface(mPrecipValue);
+        FontHelper.setCustomTypeface(mWindSpeedLabel);
+        FontHelper.setCustomTypeface(mHumidityLabel);
+
 
         myLocation = new MyLocation();
         mLocationResult = new MyLocation.LocationResult() {
@@ -104,10 +116,12 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         setupSharedPref();
 
         Toolbar toolbar = findViewById(R.id.my_toolbar);
+        TextView toolbarTitleTv = toolbar.findViewById(R.id.toolbar_title);
+        setTitle("");
         setSupportActionBar(toolbar);
-        setTitle(getString(R.string.title_toolbar));
-        toolbar.setTitleMargin(4, 2, 2, 0);
-        toolbar.setTitleTextColor(Color.WHITE);
+
+        toolbarTitleTv.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/CaviarDreams_Bold.ttf"));
+        toolbarTitleTv.setText("Weather");
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
@@ -129,22 +143,6 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     }
 
-    public String loadJSONFromAsset() {
-        String json = null;
-        try {
-            InputStream is = getAssets().open("city.list.json");
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, "UTF-8");
-            int f = json.length();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-        return json;
-    }
 
     private void setupSharedPref(){
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
